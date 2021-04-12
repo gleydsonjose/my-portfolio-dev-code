@@ -1,0 +1,32 @@
+.tools-i-currently-use {
+  margin-top: 4em;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.tools-i-currently-use__title {
+  margin-bottom: 1em;
+  color: var(--black-light);
+}
+
+.tools-i-currently-use__title_night_mode {
+  font-weight: normal;
+  color: var(--white);
+}
+
+.tools-i-currently-use__title-icon {
+  margin-right: .5em;
+}
+
+.tools-i-currently-use__tools-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tools-i-currently-use__tools-item {
+  border-radius: 4px;
+  margin-right: .9em;
+  margin-bottom: .9em;
+  width: 50px;
+  height: 50px;
+}

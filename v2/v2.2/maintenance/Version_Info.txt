@@ -1,0 +1,6 @@
+Currently version: 2.2
+
+Changes in version 2.2:
+1- Remove Wordpress in 'Tools I use'.
+2- Add TypeScript and Gulp in 'Tools I use'.
+3- Rename alt/legend 'Javascript' to 'JavaScript' in 'Tools I use'.

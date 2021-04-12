@@ -1,0 +1,220 @@
+import React from 'react';
+
+class Slider extends React.Component {
+  state = {
+    sliderBtnGroup: [
+      {id: 0, active: true},
+      {id: 1, active: false},
+      {id: 2, active: false},
+      {id: 3, active: false},
+      {id: 4, active: false}
+    ],
+    sliderImages: [
+      {image: '/images/slider/slider-1.png', legend: 'Metrix One'},
+      {image: '/images/slider/slider-2.png', legend: 'OW Info Project'},
+      {image: '/images/slider/slider-3.png', legend: 'SatuctGames Shop'},
+      {image: '/images/slider/slider-4.png', legend: 'SatuctGames Shop'},
+      {image: '/images/slider/slider-5.png', legend: 'JSA Project'}
+    ],
+    sliderCurrentImgData: ['/images/slider/slider-1.png', 'Metrix One'],
+    sliderCurrentImgIndex: 0,
+    sliderInterval: '',
+    loadCurrentImageSlider: false,
+    imageTransition: false
+  }
+
+  sliderInterval() {
+    const {sliderCurrentImgIndex} = this.state;
+
+    const sliderInterval = setInterval(() => {
+      let imgIndex = sliderCurrentImgIndex;
+      imgIndex = imgIndex < 4 ? imgIndex + 1 : 0;
+      this.setState({
+        sliderCurrentImgIndex: imgIndex,
+        imageTransition: true,
+      });
+    }, 3000);
+
+    this.setState({sliderInterval});
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const {loadCurrentImageSlider, sliderInterval} = this.state;
+
+    if(prevState.loadCurrentImageSlider !== loadCurrentImageSlider) {
+      if(loadCurrentImageSlider) {
+        this.sliderInterval();
+      } else {
+        this.setState({sliderInterval: clearInterval(sliderInterval)});
+      }
+    }
+  }
+
+  componentWillUnmount() {
+    this.setState({sliderInterval: clearInterval(this.state.sliderInterval)});
+  }
+  
+  handleSliderButton = buttonId => {
+    const {sliderBtnGroup} = this.state;
+
+    //if(sliderCurrentImgIndex !== buttonId) {
+    if(!sliderBtnGroup[buttonId].active) {
+      this.setState({
+        imageTransition: true,
+        sliderCurrentImgIndex: buttonId
+      });
+    }
+  }
+
+  loadCurrentImageSlider = (e) => {
+    if(e.target.complete) {
+      this.setState({loadCurrentImageSlider: true});
+    }
+  }
+
+  changeSliderImage = () => {
+    const {sliderCurrentImgIndex, sliderBtnGroup, loadCurrentImageSlider, sliderImages} = this.state;
+
+    let buttonId = sliderCurrentImgIndex;
+    if(!sliderBtnGroup[buttonId].active && loadCurrentImageSlider) {
+      const sliderBtnGroupNew = sliderBtnGroup.map(button => 
+        button.id === buttonId ? {id: button.id, active: true} : {id: button.id, active: false});
+      this.setState({
+        sliderBtnGroup: sliderBtnGroupNew,
+        sliderCurrentImgData: [sliderImages[buttonId].image, sliderImages[buttonId].legend],
+        sliderCurrentImgIndex: buttonId,
+        loadCurrentImageSlider: false,
+        imageTransition: false
+      });
+    }
+  }
+  
+  render() {
+    let imageTransitionClass = this.state.imageTransition ? "transparent-transition-image" : "normal-transition-image";
+
+    return (
+    <section id="slider-body">
+      <ul id="slider-btngroup">
+        {this.state.sliderBtnGroup.map(button => {
+          let sliderButtonClass = 'slider-btngroup-children';
+          sliderButtonClass += button.active ? ' slider-image-active' : '';
+          return <li key={button.id} className={sliderButtonClass} onClick={() => this.handleSliderButton(button.id)}></li>
+        })}
+      </ul>
+      <img src={this.state.sliderCurrentImgData[0]} alt={this.state.sliderCurrentImgData[1]} id="slider-images" onLoad={this.loadCurrentImageSlider} className={imageTransitionClass} onTransitionEnd={this.changeSliderImage}/>
+      <p className="slider-legend">{this.state.sliderCurrentImgData[1]}</p>
+    </section>
+    );
+  };
+}
+
+const AboutMe = (props) => {
+  const {languageData, currentLanguage} = props;
+  const aboutMe = languageData[currentLanguage].homepage.aboutMe;
+
+  return (
+    <section id="about-me">
+      <div id="about-me-title">
+        <i className="fas fa-scroll"></i>
+        <h2>{aboutMe.title}</h2>
+      </div>
+      <div id="about-me-text">
+        <p>{aboutMe.text}</p>
+      </div>
+    </section>
+  );
+}
+
+const MyTools = (props) => {
+  const {languageData, currentLanguage} = props;
+  const myTools = languageData[currentLanguage].homepage.myTools;
+
+  const toolsImages = [
+    {id: 0, image: '/images/myTools/html5.png', alt: 'HTML5'},
+    {id: 1, image: '/images/myTools/css3.png', alt: 'CSS3'},
+    {id: 2, image: '/images/myTools/js.png', alt: 'JavaScript'},
+    {id: 3, image: '/images/myTools/ts.png', alt: 'TypeScript'},
+    {id: 4, image: '/images/myTools/sass.png', alt: 'Sass'},
+    {id: 5, image: '/images/myTools/react.png', alt: 'React'},
+    {id: 6, image: '/images/myTools/vuejs.png', alt: 'VueJS'},
+    {id: 7, image: '/images/myTools/bootstrap.png', alt: 'Bootstrap'},
+    {id: 8, image: '/images/myTools/gulp.png', alt: 'Gulp'},
+    {id: 9, image: '/images/myTools/php.png', alt: 'PHP'},
+    {id: 10, image: '/images/myTools/mysql.png', alt: 'MySQL'},
+    {id: 11, image: '/images/myTools/docker.png', alt: 'Docker'}
+  ]
+
+  return (
+    <section id="my-tools">
+      <div id="my-tools-title">
+        <i className="fas fa-tools"></i>
+        <h2>{myTools.title}</h2>
+      </div>
+      <div id="tools-body">
+        {toolsImages.map(tool => 
+          <div className="tools-children" key={tool.id}>
+            <img src={tool.image} alt={tool.alt} title={tool.alt}/>
+          </div>          
+        )}
+      </div>
+    </section>
+  );
+}
+
+const MyGitHub = (props) => {
+  const {languageData, currentLanguage} = props;
+  const myGitHub = languageData[currentLanguage].homepage.myGitHub;
+
+  return (
+    <section id="my-github">
+      <div id="my-github-title">
+        <i className="fab fa-github"></i>
+        <h2>{myGitHub.title}</h2>
+      </div>
+      <div id="github-repository-body">
+        <a href="https://github.com/satuctkode?tab=repositories" target="_blank" rel="noopener noreferrer" id="github-repository-inner">
+          <div id="github-repository-image">
+            <img src='/images/imgprofilegithub.jpeg' alt={myGitHub.githubRepositoryImageAlt}/>
+          </div>
+          <div id="github-repository-data">
+            <p id="repository-title">{myGitHub.repositoryTitle}</p>
+            <p id="total-repository">{myGitHub.totalRepository}</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  );
+}
+
+const ContactMeButton = (props) => {
+  const {languageData, currentLanguage} = props;
+  const contactMeButton = languageData[currentLanguage].homepage.contactMeFooterButton;
+
+  return (
+    <section id="contact-me-footer-button-body">
+      <div id="contact-me-footer-button">
+        <button type="button" onClick={() => props.onChangePage('contactmepage')}>
+          <i className="fas fa-comment"></i>
+          {contactMeButton.buttonText}
+        </button>
+      </div>
+    </section>
+  );
+}
+  
+const HomePage = (props) => {
+  const {languageData, currentLanguage, onChangePage} = props;
+  
+  return (
+    <article id="homepage-body">
+      <Slider/>
+      <AboutMe currentLanguage={currentLanguage} languageData={languageData}/>
+      <MyTools currentLanguage={currentLanguage} languageData={languageData}/>
+      <MyGitHub currentLanguage={currentLanguage} languageData={languageData}/>
+      <ContactMeButton currentLanguage={currentLanguage} languageData={languageData}
+        onChangePage={onChangePage}/>
+    </article>
+  );
+}
+
+export default HomePage;

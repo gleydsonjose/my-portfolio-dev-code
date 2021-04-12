@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --black-light: #252525;
+  --black-light2: #323232;
+  --black-transparent: #26262680;
+  --black-transparent2: #26262621;
+  --white: #fff;
+  --red: #d43838;
+  --red-dark: #971313;
+  --red-light: #ff7979;
+  --red-light2: #fd5454;
+  --gray: #f2f2f2;
+  --gray-light: #c7c7c7;
+  --gray-dark: #646464;
+  font-family: "Raleway", sans-serif;
+}

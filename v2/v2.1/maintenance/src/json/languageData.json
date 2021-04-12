@@ -1,0 +1,479 @@
+{
+  "ptbr": {
+    "navbar": {
+      "languageBtnGroup" : [
+        {"title": "Português Brasil", "alt": "Botão Português Brasil"},
+        {"title": "Inglês", "alt": "Botão Inglês"}
+      ],
+      "menuList": [
+        {"listItem": "Inicio"},
+        {"listItem": "Projetos de Clientes"},
+        {"listItem": "Meus Projetos"},
+        {"listItem": "Contate-me"}
+      ]
+    },
+    "homepage": {
+      "aboutMe" : {
+        "title": "Sobre mim",
+        "text": "Olá a todos, me chamo Gleydson José e é um prazer compartilhar um pouco de mim com vocês. Por volta do 4° trimestre de 2017 eu acabei me deparando com programação pela primeira vez e foi amor a primeira vista, no inicio de tudo eu comecei com desevolvimento de software e tive contato com Java e Python, cheguei a criar alguns projetos mas só coloquei apenas 1(criado em Python) em meu repositório GitHub. No entanto, no ano de 2019 eu resolvi mudar de área, e fui para desenvolvimento web, claro que eu já tive contato com essa área bem antes dessa escolha, mas esse contato não foi com muita frequência. O motivo da mudança de área foi questão de gosto pessoal, e com essa mudança eu criei alguns projetos que já está em meu Github, quase sempre estou desenvolvendo alguma coisa e quando gosto bastante daquele projeto eu acabo colocando no Github. Desde que eu era desenvolvedor de software eu fui fullstack, sempre gostei de conhecer mais sobre os dois lados da moeda, mas o lado que eu mais gosto é o back-end."
+      },
+      "myTools" : {
+        "title": "Ferramentas que utilizo"
+      },
+      "myGitHub" : {
+        "title": "Meu GitHub",
+        "githubRepositoryImageAlt": "Imagem do perfil no GitHub",
+        "repositoryTitle": "Repositórios",
+        "totalRepository": "14"
+      },
+      "contactMeFooterButton": {
+        "buttonText" : "Entre em contato comigo"
+      }
+    },
+    "clientsprojectspage": {
+      "clientsProjectsPageTitle": "Projetos de Clientes",
+      "clientsProjectsDescription": {
+        "buttonOpenDescriptionText": "Mostrar descrição",
+        "buttonCloseDescriptionText": "Esconder descrição"
+      },
+      "clientsProjectButton": [
+        {"title": "Ver imagens"},
+        {"title": "Ver site"}
+      ],
+      "clientsProjects": [
+        {
+          "id": 0,
+          "name": "Metrix One",
+          "image": "/images/projects/clientsProjects/metrixOne/image-1.png",
+          "alt": "Metrix One imagem do site",
+          "site": "https://metrix.one",
+          "description": "Meu primeiro trabalho como freelancer foi criar está Landing Page para a Metrix One.",
+          "descriptionStatus": false,
+          "modalImages": [
+            {
+              "id": 0,
+              "image": "/images/projects/clientsProjects/metrixOne/image-1.png",
+              "alt": "Metrix One imagem 1 do site"
+            },
+            {
+              "id": 1,
+              "image": "/images/projects/clientsProjects/metrixOne/image-2.png",
+              "alt": "Metrix One imagem 2 do site"
+            },
+            {
+              "id": 2,
+              "image": "/images/projects/clientsProjects/metrixOne/image-3.png",
+              "alt": "Metrix One imagem 3 do site"
+            },
+            {
+              "id": 3,
+              "image": "/images/projects/clientsProjects/metrixOne/image-4.png",
+              "alt": "Metrix One imagem 4 do site"
+            }
+          ]
+        }
+      ]
+    },
+    "myprojectspage": {
+      "myProjectsPageTitle": "Meus Projetos",
+      "myProjectsDescription": {
+        "buttonOpenDescriptionText": "Mostrar descrição",
+        "buttonCloseDescriptionText": "Esconder descrição"
+      },
+      "myProjectButton": [
+        {"title": "Ver imagens"},
+        {"title": "Ver site"},
+        {"title": "Ver código fonte"}
+      ],
+      "myProjects": [
+        {
+          "id": 0,
+          "name": "JSA Project",
+          "image": "/images/projects/myProjects/jsaproject/image1-jp.png",
+          "alt": "JSA Project imagem do site",
+          "site": "http://jsaproject.epizy.com",
+          "sourceCode": "https://github.com/satuctkode/ProjectJSA_PHP_MySQL",
+          "description": "Este projeto já teve várias versões e foi o meu primeiro grande projeto, ele é sobre serviços em ar condicionado e o foco dele atualmente é em apenas uma única página(chamado de OnePage), apesar de que todas suas versões anteriores eram em várias páginas.",
+          "descriptionStatus": false,
+          "modalImages": [
+            {
+              "id": 0,
+              "image": "/images/projects/myProjects/jsaproject/image1-jp.png",
+              "alt": "JSA Project imagem 1 do site"
+            },
+            {
+              "id": 1,
+              "image": "/images/projects/myProjects/jsaproject/image2-jp.png",
+              "alt": "JSA Project imagem 2 do site"
+            },
+            {
+              "id": 2,
+              "image": "/images/projects/myProjects/jsaproject/image3-jp.png",
+              "alt": "JSA Project imagem 3 do site"
+            },
+            {
+              "id": 3,
+              "image": "/images/projects/myProjects/jsaproject/image4-jp.png",
+              "alt": "JSA Project imagem 4 do site"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "OW Info Project",
+          "image": "/images/projects/myProjects/owinfo-project/image1-oip.png",
+          "alt": "OW Info Project imagem do site",
+          "site": "http://owinfo-project.epizy.com",
+          "sourceCode": "https://github.com/satuctkode/OWInfo-Project",
+          "description": "Uma das coisas que mais gosto além de programação, são jogos eletrônicos, e o meu primeiro projeto web de um jogo que gosto muito(Overwatch) foi este, esse site é para o usuário encontrar informações sobre personagens e mapas deste jogo.",
+          "descriptionStatus": false,
+          "modalImages": [
+            {
+              "id": 0,
+              "image": "/images/projects/myProjects/owinfo-project/image1-oip.png",
+              "alt": "OW Info Project imagem 1 do site"
+            },
+            {
+              "id": 1,
+              "image": "/images/projects/myProjects/owinfo-project/image2-oip.png",
+              "alt": "OW Info Project imagem 2 do site"
+            },
+            {
+              "id": 2,
+              "image": "/images/projects/myProjects/owinfo-project/image3-oip.png",
+              "alt": "OW Info Project imagem 3 do site"
+            },
+            {
+              "id": 3,
+              "image": "/images/projects/myProjects/owinfo-project/image4-oip.png",
+              "alt": "OW Info Project imagem 4 do site"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "SatuctGames Shop",
+          "image": "/images/projects/myProjects/satuctgames-shop/image1-sgs.png",
+          "alt": "SatuctGames Shop imagem do site",
+          "site": "http://satuctgames-shop.epizy.com",
+          "sourceCode": "https://github.com/satuctkode/SatuctGames_Project_PHP_MySQL",
+          "description": "Esse projeto foi um dos que eu mais gostei de ter criado, ele é simplesmente uma loja de games que há carrinho, área de login/cadastro e um painel de controle para usuários, produtos e cupons de desconto.",
+          "descriptionStatus": false,
+          "modalImages": [
+            {
+              "id": 0,
+              "image": "/images/projects/myProjects/satuctgames-shop/image1-sgs.png",
+              "alt": "SatuctGames Shop imagem 1 do site"
+            },
+            {
+              "id": 1,
+              "image": "/images/projects/myProjects/satuctgames-shop/image2-sgs.png",
+              "alt": "SatuctGames Shop imagem 2 do site"
+            },
+            {
+              "id": 2,
+              "image": "/images/projects/myProjects/satuctgames-shop/image3-sgs.png",
+              "alt": "SatuctGames Shop imagem 3 do site"
+            },
+            {
+              "id": 3,
+              "image": "/images/projects/myProjects/satuctgames-shop/image4-sgs.png",
+              "alt": "SatuctGames Shop imagem 4 do site"
+            }
+          ]
+        }
+      ],
+      "myProjectsFCCPageTitle": "Meus Projetos na FreeCodeCamp",
+      "myProjectsFCCDescription": {
+        "buttonSourceCode": "Ver site no CodePen"
+      },
+      "myProjectsFCC": [
+        {
+          "id": 0,
+          "name": "Tribute Page FCC",
+          "image": "/images/projects/myProjects/tribute-page-fcc/image1-fcc.png",
+          "alt": "Tribute Page FCC imagem do site",
+          "sourceCode": "https://codepen.io/satuctkode/pen/jOELxdW"
+        },
+        {
+          "id": 1,
+          "name": "Survey Form FCC",
+          "image": "/images/projects/myProjects/survey-form-fcc/image1-fcc.png",
+          "alt": "Survey Form FCC imagem do site",
+          "sourceCode": "https://codepen.io/satuctkode/pen/vYEJrmq"
+        }
+      ]
+    },
+    "contactmepage": {
+      "socialMediaTitle": "Entre em contato comigo pelas redes sociais",
+      "sendMessage": {
+        "title": "Envie-me uma mensagem",
+        "inputGroup": {
+          "inputName": {
+            "labelText": "Nome",
+            "inputPlaceholder": "Digite seu nome",
+            "inputMsgError": "Digite pelo menos 2 caracteres"
+          },
+          "inputEmail": {
+            "labelText": "Email",
+            "inputPlaceholder": "Digite seu email",
+            "inputMsgError": "Preencha o campo email corretamente"
+          },
+          "inputSubject": {
+            "labelText": "Assunto da mensagem",
+            "inputPlaceholder": "Digite o nome do assunto",
+            "inputMsgError": "Digite pelo menos 2 caracteres"
+          },
+          "textareaMessage": {
+            "labelText": "Mensagem",
+            "textareaPlaceholder": "Digite uma mensagem",
+            "textareaMsgError": "Digite pelo menos 2 caracteres"
+          }
+        },
+        "sendButtonText": "Enviar",
+        "successMessage": "Mensagem enviada com sucesso",
+        "sendMessageError": "Ocorreu um erro ao tentar enviar a mensagem"
+      }
+    },
+    "modalBtnClose": "Fechar"
+  },
+  "en": {
+    "navbar": {
+      "languageBtnGroup" : [
+        {"title": "Portuguese Brazil", "alt": "Portuguese Brazil Button"},
+        {"title": "English", "alt": "English Button"}
+      ],
+      "menuList": [
+        {"listItem": "Home"},
+        {"listItem": "Customer Projects"},
+        {"listItem": "My Projects"},
+        {"listItem": "Contact-me"}
+      ]
+    },
+    "homepage": {
+      "aboutMe" : {
+        "title": "About me",
+        "text": "Hello everyone, my name is Gleydson José and it's a pleasure to share a little bit of me with you. Around the fourth quarter of 2017 I ended up coming across programming for the first time and it was love at first sight, at the beginning of it all I started with software development and had contact with Java and Python, I created some projects but only put only 1(created with Python) in my GitHub repository. However, in 2019 I decided to change area, and went to web development, of course I had contact with this area well before that choice, but this contact wasn't very often. The reason for the change of area was a matter of personal taste, and with this change I created some projects that is already on my Github, almost always i'm developing something and when I like that project a lot I end up putting on Github. Since I was a software developer I've been fullstack, I've always enjoyed knowing more about both sides of the coin, but the side I like the most is the back-end."
+      },
+      "myTools" : {
+        "title": "Tools I use"
+      },
+      "myGitHub" : {
+        "title": "My GitHub",
+        "githubRepositoryImageAlt": "Profile Image on GitHub",
+        "repositoryTitle": "Repositories",
+        "totalRepository": "14"
+      },
+      "contactMeFooterButton": {
+        "buttonText" : "Contact me"
+      }
+    },
+    "clientsprojectspage": {
+      "clientsProjectsPageTitle": "Customer Projects",
+      "clientsProjectsDescription": {
+        "buttonOpenDescriptionText": "Show description",
+        "buttonCloseDescriptionText": "Hide description"
+      },
+      "clientsProjectButton": [
+        {"title": "See images"},
+        {"title": "See website"}
+      ],
+      "clientsProjects": [
+        {
+          "id": 0,
+          "name": "Metrix One",
+          "image": "/images/projects/clientsProjects/metrixOne/image-1.png",
+          "alt": "Metrix One website image",
+          "site": "https://metrix.one",
+          "description": "My first freelancer job was create this Landing Page for the Metrix One.",
+          "descriptionStatus": false,
+          "modalImages": [
+            {
+              "id": 0,
+              "image": "/images/projects/clientsProjects/metrixOne/image-1.png",
+              "alt": "Metrix One website image 1"
+            },
+            {
+              "id": 1,
+              "image": "/images/projects/clientsProjects/metrixOne/image-2.png",
+              "alt": "Metrix One website image 2"
+            },
+            {
+              "id": 2,
+              "image": "/images/projects/clientsProjects/metrixOne/image-3.png",
+              "alt": "Metrix One website image 3"
+            },
+            {
+              "id": 3,
+              "image": "/images/projects/clientsProjects/metrixOne/image-4.png",
+              "alt": "Metrix One website image 4"
+            }
+          ]
+        }
+      ]
+    },
+    "myprojectspage": {
+      "myProjectsPageTitle": "My Projects",
+      "myProjectsDescription": {
+        "buttonOpenDescriptionText": "Show description",
+        "buttonCloseDescriptionText": "Hide description"
+      },
+      "myProjectButton": [
+        {"title": "See images"},
+        {"title": "See website"},
+        {"title": "See source code"}
+      ],
+      "myProjects": [
+        {
+          "id": 0,
+          "name": "JSA Project",
+          "image": "/images/projects/myProjects/jsaproject/image1-jp.png",
+          "alt": "JSA Project website image",
+          "site": "http://jsaproject.epizy.com",
+          "sourceCode": "https://github.com/satuctkode/ProjectJSA_PHP_MySQL",
+          "description": "This project has had several versions and was my first big project, it is about services in air conditioning and the focus of it currently is on only one page, although all of its previous versions were on multiple pages.",
+           
+          "descriptionStatus": false,
+          "modalImages": [
+            {
+              "id": 0,
+              "image": "/images/projects/myProjects/jsaproject/image1-jp.png",
+              "alt": "JSA Project website image 1"
+            },
+            {
+              "id": 1,
+              "image": "/images/projects/myProjects/jsaproject/image2-jp.png",
+              "alt": "JSA Project website image 2"
+            },
+            {
+              "id": 2,
+              "image": "/images/projects/myProjects/jsaproject/image3-jp.png",
+              "alt": "JSA Project website image 3"
+            },
+            {
+              "id": 3,
+              "image": "/images/projects/myProjects/jsaproject/image4-jp.png",
+              "alt": "JSA Project website image 4"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "OW Info Project",
+          "image": "/images/projects/myProjects/owinfo-project/image1-oip.png",
+          "alt": "OW Info Project website image",
+          "site": "http://owinfo-project.epizy.com",
+          "sourceCode": "https://github.com/satuctkode/OWInfo-Project",
+          "description": "One of the things I like most besides programming, are video games, and my first web project was about a game I like a lot (Overwatch). This site is for the user to find information about characters and maps of this game.",
+          "descriptionStatus": false,
+          "modalImages": [
+            {
+              "id": 0,
+              "image": "/images/projects/myProjects/owinfo-project/image1-oip.png",
+              "alt": "OW Info Project website image 1"
+            },
+            {
+              "id": 1,
+              "image": "/images/projects/myProjects/owinfo-project/image2-oip.png",
+              "alt": "OW Info Project website image 2"
+            },
+            {
+              "id": 2,
+              "image": "/images/projects/myProjects/owinfo-project/image3-oip.png",
+              "alt": "OW Info Project website image 3"
+            },
+            {
+              "id": 3,
+              "image": "/images/projects/myProjects/owinfo-project/image4-oip.png",
+              "alt": "OW Info Project website image 4"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "SatuctGames Shop",
+          "image": "/images/projects/myProjects/satuctgames-shop/image1-sgs.png",
+          "alt": "SatuctGames Shop website image",
+          "site": "http://satuctgames-shop.epizy.com",
+          "sourceCode": "https://github.com/satuctkode/SatuctGames_Project_PHP_MySQL",
+          "description": "This project was one of the ones I liked the most to have created, it is simply a game store that there is cart, login/register area and a dashboard for users, products and discount coupons.",
+          "descriptionStatus": false,
+          "modalImages": [
+            {
+              "id": 0,
+              "image": "/images/projects/myProjects/satuctgames-shop/image1-sgs.png",
+              "alt": "SatuctGames Shop website image 1"
+            },
+            {
+              "id": 1,
+              "image": "/images/projects/myProjects/satuctgames-shop/image2-sgs.png",
+              "alt": "SatuctGames Shop website image 2"
+            },
+            {
+              "id": 2,
+              "image": "/images/projects/myProjects/satuctgames-shop/image3-sgs.png",
+              "alt": "SatuctGames Shop website image 3"
+            },
+            {
+              "id": 3,
+              "image": "/images/projects/myProjects/satuctgames-shop/image4-sgs.png",
+              "alt": "SatuctGames Shop website image 4"
+            }
+          ]
+        }
+      ],
+      "myProjectsFCCPageTitle": "My Projects in FreeCodeCamp",
+      "myProjectsFCCDescription": {
+        "buttonSourceCode": "See website in CodePen"
+      },
+      "myProjectsFCC": [
+        {
+          "id": 0,
+          "name": "Tribute Page FCC",
+          "image": "/images/projects/myProjects/tribute-page-fcc/image1-fcc.png",
+          "alt": "Tribute Page FCC website image",
+          "sourceCode": "https://codepen.io/satuctkode/pen/jOELxdW"
+        },
+        {
+          "id": 1,
+          "name": "Survey Form FCC",
+          "image": "/images/projects/myProjects/survey-form-fcc/image1-fcc.png",
+          "alt": "Survey Form FCC website image",
+          "sourceCode": "https://codepen.io/satuctkode/pen/vYEJrmq"
+        }
+      ]
+    },
+    "contactmepage": {
+      "socialMediaTitle": "Contact me on social media",
+      "sendMessage": {
+        "title": "Send me a message",
+        "inputGroup": {
+          "inputName": {
+            "labelText": "Name",
+            "inputPlaceholder": "Type your name",
+            "inputMsgError": "Type at least 2 characters"
+          },
+          "inputEmail": {
+            "labelText": "Email",
+            "inputPlaceholder": "Type your email",
+            "inputMsgError": "Fill in the email field correctly"
+          },
+          "inputSubject": {
+            "labelText": "Subject",
+            "inputPlaceholder": "Type a subject",
+            "inputMsgError": "Type at least 2 characters"
+          },
+          "textareaMessage": {
+            "labelText": "Message",
+            "textareaPlaceholder": "Type a message",
+            "textareaMsgError": "Type at least 2 characters"
+          }
+        },
+        "sendButtonText": "Submit",
+        "successMessage": "The message was successfully sent",
+        "sendMessageError": "An error occurred while trying to send the message"
+      }
+    },
+    "modalBtnClose": "Close"
+  }
+}

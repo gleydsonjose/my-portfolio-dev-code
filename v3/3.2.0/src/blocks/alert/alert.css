@@ -1,0 +1,20 @@
+.alert {
+  margin-top: 4em;
+  background-color: var(--red-light);
+  padding: 1em;
+  border-radius: 3px;
+}
+
+.alert__text {
+  color: var(--red-dark);
+}
+
+.alert__link {
+  text-decoration: none;
+  color: var(--red-dark);
+  font-weight: bold;
+}
+
+.alert__link:hover {
+  text-decoration: underline;
+}

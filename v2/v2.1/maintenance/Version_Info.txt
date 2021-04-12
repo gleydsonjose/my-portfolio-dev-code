@@ -1,0 +1,10 @@
+Currently version: 2.1
+
+Changes in version 2.1:
+1- Now it's only possible to advance or return images in modals if the image is loaded.
+2- Close button in modals had a problem, if clicked in close icon the modal wasn't closed, now is was resolve.
+3- Fixed problem with modals when resize browser, if browser was desktop width and resize for mobile, currently modal not changed.
+4- Now the start language is by user location.
+5- Transitions among images have animation now.
+6- GitHub repository numbers updated.
+7- ContactMe sends email with PHPMailer now.

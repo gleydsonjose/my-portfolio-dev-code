@@ -1,0 +1,13 @@
+@mixin display_flex($display: flex, $flex-direction: row, $flex-wrap: nowrap, $justify-content: flex-start, $align-items: flex-start) {
+  display: $display;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin transition($transition-duration, $transition-timing-function, $transition-property...) {
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+  transition-property: $transition-property;
+}

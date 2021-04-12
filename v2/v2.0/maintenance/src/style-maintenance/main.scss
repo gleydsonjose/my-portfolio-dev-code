@@ -1,0 +1,1923 @@
+@use 'mixins' as *;
+@use 'colors' as *;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: $white;
+}
+
+.slider-image-active {
+  cursor: default !important;
+  background-color: #3588cc !important;
+}
+
+.navbar-btn-active {
+  cursor: default !important;
+  background-color: #3588cc;
+  color: #e0e0e0;
+}
+
+.input-error {
+  border: 1.5px solid $red !important;
+  box-shadow: 0 0 2px $red !important;
+}
+
+.hide-contact-me-message-success {
+  animation: opacity 4s ease-in-out;
+  cursor: default;
+
+  @keyframes opacity {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+.modal-desktop-image-active {
+  cursor: default !important;
+  opacity: 0.5 !important;
+}
+
+.modal-mobile-btn-limit {
+  cursor: default !important;
+  background-color: $blue-dark !important;
+  color: $gray !important;
+}
+
+// Main
+#main-body {
+  @include display_flex($flex-direction: column, $align-items: center);
+  width: 100vw;
+
+  // Navbar
+  #main-navbar {
+    @include display_flex($justify-content: space-between, $align-items: center);
+    width: 100%;
+    background-color: $black;
+    margin-bottom: 65px;
+    padding: 10px 0;
+
+    #logo-body-portfolio {
+      @include display_flex();
+      margin-left: 25px;
+      width: 180px;
+      height: 45px;
+
+      #logo-img-portfolio {
+        width: 100%;
+      }
+    }
+
+    #menu-navbar {
+      @include display_flex();
+      font-size: 11pt;
+      margin-right: 40px;
+      
+      ul {
+        @include display_flex();
+        list-style: none;
+      }
+
+      ul li {
+        @include display_flex($justify-content: center, $align-items: center);
+        user-select: none;
+        color: $white;
+
+      }
+
+      ul li i {
+        margin-right: 6px;
+      }
+
+      #language-btngroup {
+        align-self: center;
+        margin-right: 30px;
+      }
+
+      #language-btngroup li {
+        width: 30px;
+        height: 21px;
+        opacity: 1;
+        @include transition(0.3s, ease-in-out, opacity);
+      }
+
+      #language-btngroup li img {
+        width: 100%;
+        height: 100%;
+      }
+
+      #language-btngroup li:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        @include transition(0.3s, ease-in-out, opacity);
+      }
+
+      #language-btngroup li:first-child {
+        margin-right: 1px;
+      }
+
+      #language-btngroup li:first-child, #language-btngroup li:first-child img {
+        border-radius: 30px 0 0 30px;
+      }
+
+      #language-btngroup li:last-child, #language-btngroup li:last-child img {
+        border-radius: 0 30px 30px 0;
+      }
+
+      #menu-list li {
+        padding: 8px 13px;
+        border-radius: 30px;
+        margin-left: 12px;
+        font-size: 10pt;
+        @include transition(0.3s, ease-in-out, color, background-color);
+      }
+
+      #menu-list li:hover {
+        cursor: pointer;
+        background-color: $blue;
+        color: $gray;
+        @include transition(0.3s, ease-in-out, color, background-color);
+      }
+
+      #menu-list li:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  // Home Page
+  #homepage-body {
+    @include display_flex($flex-direction: column);
+    width: 1000px;
+
+    #slider-body {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      position: relative;
+      box-shadow: 0 0 3px 2px $gray;
+      width: 100%;
+      height: 600px;
+      border-radius: 10px;
+      user-select: none;
+
+      #slider-btngroup {
+        @include display_flex();
+        list-style: none;
+        position: absolute;
+        justify-self: flex-end;
+        margin: 15px 15px 0 0;
+        grid-row: 1/2;
+        z-index: 2;
+      }
+
+      #slider-btngroup .slider-btngroup-children {
+        background-color: $white;
+        box-shadow: 0 0 1px $black;
+        border-radius: 10px;
+        width: 13px;
+        height: 13px;
+        margin-right: 5px;
+        opacity: 0.7;
+      }
+
+      #slider-btngroup .slider-btngroup-children:hover {
+        cursor: pointer;
+        background-color: $blue;
+      }
+
+      #slider-btngroup .slider-btngroup-children:last-child {
+        margin-right: 0;
+      }
+
+      #slider-images {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        grid-row: 1/3;
+        z-index: 1;
+      }
+
+      .slider-legend {
+        align-self: flex-end;
+        grid-row: 2/3;
+        width: 100%;
+        padding: 15px;
+        border-radius: 0 0 10px 10px;
+        background-color: $black-transparent;
+        color: $gray;
+        font-size: 10pt;
+        position: absolute;
+        z-index: 2;
+      }
+    }
+
+    #about-me {
+      @include display_flex($flex-direction: column);
+      margin-top: 65px;
+      width: 100%;
+
+      #about-me-title {
+        @include display_flex($align-items: center);
+        color: $blue;
+        margin-bottom: 15px;
+        width: 100%;
+
+        i {
+          margin-right: 6px;
+        }
+
+        h2 {
+          font-size: 13pt;
+        }
+      }
+
+      #about-me-text {
+        width: 100%;
+        color: $black;
+        font-size: 11pt;
+        text-align: justify;
+      }
+    }
+
+    #my-tools {
+      @include display_flex($flex-direction: column);
+      margin-top: 65px;
+      width: 100%;
+
+      #my-tools-title {
+        @include display_flex($align-items: center);
+        color: $blue;
+        margin-bottom: 20px;
+        width: 100%;
+
+        i {
+          margin-right: 6px;
+        }
+
+        h2 {
+          font-size: 13pt;
+        }
+      }
+
+      #tools-body {
+        @include display_flex($flex-wrap: wrap);
+        width: 100%;
+
+        .tools-children {
+          width: 50px;
+          height: 50px;
+          margin-right: 10px;
+          margin-bottom: 20px;
+          border-radius: 15px;
+          box-shadow: 0 0 3px 2px $gray;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+
+        .tools-children:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    #my-github {
+      @include display_flex($flex-direction: column);
+      margin-top: 45px;
+      width: 100%;
+
+      #my-github-title {
+        @include display_flex($align-items: center);
+        color: $blue;
+        margin-bottom: 20px;
+        width: 100%;
+
+        i {
+          margin-right: 6px;
+        }
+
+        h2 {
+          font-size: 13pt;
+        }
+      }
+
+      #github-repository-body {
+        @include display_flex();
+        width: 100%;
+
+        #github-repository-inner {
+          @include display_flex();
+          background-color: $black;
+          color: $white;
+          border-radius: 15px;
+          height: 90px;
+          box-shadow: 0 0 3px 2px $gray;
+          text-decoration: none;
+          opacity: 1;
+          @include transition(0.3s, ease-in-out, opacity);
+
+          &:hover {
+            opacity: 0.9;
+            @include transition(0.3s, ease-in-out, opacity);
+          }
+
+          #github-repository-image {
+            width: 90px;
+            height: 90px;
+            border-radius: 12px 0 0 12px;
+
+            img {
+              width: 100%;
+              border-radius: 12px 0 0 12px;
+            }
+          }
+
+          #github-repository-data {
+            @include display_flex($flex-direction: column, $justify-content: center, $align-items: center);
+            width: 200px;
+            height: 100%;
+            user-select: none;
+            font-size: 11pt;
+            color: $white;
+
+            p:first-child {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    #contact-me-footer-button-body {
+      @include display_flex($justify-content: center);
+      margin-top: 80px;
+      margin-bottom: 40px;
+      width: 100%;
+      user-select: none;
+
+      #contact-me-footer-button button {
+        box-shadow: 0 0 3px 2px $gray;
+        background-color: $blue;
+        color: $white;
+        padding: 12px 16px;
+        border-radius: 30px;
+        font-size: 13pt;
+        @include transition(0.3s, ease-in-out, color, background-color);
+
+        i {
+          margin-right: 6px;
+        }
+      }
+
+      #contact-me-footer-button button:hover {
+        cursor: pointer;
+        background-color: $blue-dark;
+        color: $gray;
+        @include transition(0.3s, ease-in-out, color, background-color);
+      }
+    }
+  }
+
+  // Clients Projects Page
+  #clients-projects-page-body {
+    @include display_flex($flex-direction: column);
+    width: 1100px;
+
+    #clients-projects-page {
+      @include display_flex($flex-direction: column);
+      width: 100%;
+
+      #clients-projects-page-title {
+        @include display_flex($align-items: center);
+        color: $blue;
+        margin-bottom: 30px;
+        width: 100%;
+
+        i {
+          margin-right: 6px;
+        }
+
+        h2 {
+          font-size: 13pt;
+        }
+      }
+
+      #clients-projects-body {
+        @include display_flex($flex-wrap: wrap, $justify-content: space-between);
+        width: 100%;
+
+        .clients-projects {
+          margin-bottom: 60px;
+          width: 310px;
+  
+          h3 {
+            font-size: 11pt;
+            font-weight: normal;
+            padding-bottom: 15px;
+            color: $black;
+          }
+  
+          .client-project-data {
+            box-shadow: 0 0 3px 2px $gray;
+            border-radius: 10px;
+            user-select: none;
+  
+            .client-project-image {
+              width: 100%;
+              height: 202px;
+              border-radius: 10px 10px 0 0;
+  
+              img {
+                width: 100%;
+                height: 202px;
+                border-radius: 10px 10px 0 0;
+              }
+            }
+  
+            .client-project-btngroup {
+              @include display_flex($justify-content: space-between);
+              background-color: $blue-dark;
+  
+              .client-project-button {
+                width: 100%;
+                border-right: 1px solid $blue-dark;
+  
+                button, a {
+                  @include display_flex($align-items: center, $justify-content: center);
+                  background-color: $blue;
+                  color: $white;
+                  width: 100%;
+                  padding: 16px 0;
+                  @include transition(0.3s, ease-in-out, background-color, color);
+                  text-decoration: none;
+  
+                  i {
+                    font-size: 11pt;
+                  }
+                }
+  
+                button:hover, a:hover {
+                  cursor: pointer;
+                  background-color: $blue-dark;
+                  color: $gray;
+                  @include transition(0.3s, ease-in-out, background-color, color);
+                }
+              }
+  
+              .client-project-button:last-child {
+                border-right: none;
+              }
+            }
+  
+            .client-project-description-body {
+              @include display_flex($flex-direction: column, $align-items: center);
+              background-color: #fff;
+              border-radius: 0 0 10px 10px;
+              padding: 15px 10px;
+  
+              .client-project-description-btn {
+                background-color: transparent;
+                font-size: 11pt;
+                color: $blue;
+                @include transition(0.3s, ease-in-out, color);
+  
+                i {
+                  margin-right: 6px;
+                }
+              }
+  
+              .client-project-description-btn:hover {
+                cursor: pointer;
+                color: $blue-dark;
+                @include transition(0.3s, ease-in-out, color);
+              }
+  
+              .client-project-description {
+                font-size: 10pt;
+                color: $black;
+                text-align: justify;
+              }
+  
+              .client-project-description-btn-close {
+                box-shadow: 0 0 2px 1px $gray;
+                margin-top: 15px;
+                padding: 8px 13px;
+                border-radius: 30px;
+                background-color: $blue;
+                font-size: 10pt;
+                color: $white;
+                @include transition(0.3s, ease-in-out, background-color, color);
+  
+                i {
+                  margin-right: 6px;
+                }
+              }
+  
+              .client-project-description-btn-close:hover {
+                cursor: pointer;
+                background-color: $blue-dark;
+                color: $gray;
+                @include transition(0.3s, ease-in-out, background-color, color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // My Projects Page
+  #my-projects-page-body {
+    @include display_flex($flex-direction: column);
+    width: 1100px;
+
+    #my-projects-page {
+      @include display_flex($flex-direction: column);
+      width: 100%;
+
+      #my-projects-page-title {
+        @include display_flex($align-items: center);
+        color: $blue;
+        margin-bottom: 30px;
+        width: 100%;
+
+        i {
+          margin-right: 6px;
+        }
+
+        h2 {
+          font-size: 13pt;
+        }
+      }
+
+      #my-projects-body {
+        @include display_flex($flex-wrap: wrap, $justify-content: space-between);
+        width: 100%;
+  
+        .my-projects {
+          margin-bottom: 60px;
+          width: 310px;
+          // 250
+  
+          h3 {
+            font-size: 11pt;
+            font-weight: normal;
+            padding-bottom: 15px;
+            color: $black;
+          }
+  
+          .my-project-data {
+            box-shadow: 0 0 3px 2px $gray;
+            border-radius: 10px;
+            user-select: none;
+  
+            .my-project-image {
+              width: 100%;
+              height: 202px;
+              border-radius: 10px 10px 0 0;
+  
+              img {
+                width: 100%;
+                height: 202px;
+                border-radius: 10px 10px 0 0;
+              }
+            }
+  
+            .my-project-btngroup {
+              @include display_flex($justify-content: space-between);
+              background-color: $blue-dark;
+  
+              .my-project-button {
+                width: 100%;
+                border-right: 1px solid $blue-dark;
+  
+                button, a {
+                  @include display_flex($align-items: center, $justify-content: center);
+                  background-color: $blue;
+                  color: $white;
+                  width: 100%;
+                  padding: 16px 0;
+                  @include transition(0.3s, ease-in-out, background-color, color);
+                  text-decoration: none;
+  
+                  i {
+                    font-size: 12pt;
+                  }
+                }
+  
+                button:hover, a:hover{
+                  cursor: pointer;
+                  background-color: $blue-dark;
+                  color: $gray;
+                  @include transition(0.3s, ease-in-out, background-color, color);
+                }
+              }
+  
+              .my-project-button:last-child {
+                border-right: none;
+              }
+            }
+  
+            .my-project-description-body {
+              @include display_flex($flex-direction: column, $align-items: center);
+              background-color: #fff;
+              border-radius: 0 0 10px 10px;
+              padding: 15px 10px;
+  
+              .my-project-description-btn {
+                background-color: transparent;
+                font-size: 11pt;
+                color: $blue;
+                @include transition(0.3s, ease-in-out, color);
+  
+                i {
+                  margin-right: 6px;
+                }
+              }
+  
+              .my-project-description-btn:hover {
+                cursor: pointer;
+                color: $blue-dark;
+                @include transition(0.3s, ease-in-out, color);
+              }
+  
+              .my-project-description {
+                font-size: 10pt;
+                color: $black;
+                text-align: justify;
+                user-select: text;
+              }
+  
+              .my-project-description-btn-close {
+                box-shadow: 0 0 2px 1px $gray;
+                margin-top: 15px;
+                padding: 8px 13px;
+                border-radius: 30px;
+                background-color: $blue;
+                font-size: 10pt;
+                color: $white;
+                @include transition(0.3s, ease-in-out, background-color, color);
+  
+                i {
+                  margin-right: 6px;
+                }
+              }
+  
+              .my-project-description-btn-close:hover {
+                cursor: pointer;
+                background-color: $blue-dark;
+                color: $gray;
+                @include transition(0.3s, ease-in-out, background-color, color);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #my-projects-fcc-page {
+      @include display_flex($flex-direction: column);
+      width: 100%;
+      margin-top: 50px;
+
+      #my-projects-fcc-page-title {
+        @include display_flex($align-items: center);
+        color: $blue;
+        margin-bottom: 30px;
+        width: 100%;
+
+        i {
+          margin-right: 6px;
+        }
+
+        h2 {
+          font-size: 14pt;
+        }
+      }
+
+      #my-projects-fcc-body {
+        @include display_flex($flex-wrap: wrap, $justify-content: space-between);
+        width: 100%;
+  
+        .my-projects-fcc {
+          margin-bottom: 40px;
+          width: 310px;
+  
+          h3 {
+            font-size: 11pt;
+            font-weight: normal;
+            padding-bottom: 15px;
+            color: $black;
+          }
+  
+          .my-project-fcc-data {
+            box-shadow: 0 0 3px 2px $gray;
+            border-radius: 10px;
+            user-select: none;
+  
+            .my-project-fcc-image {
+              width: 100%;
+              height: 202px;
+              border-radius: 10px 10px 0 0;
+  
+              img {
+                width: 100%;
+                height: 202px;
+                border-radius: 10px 10px 0 0;
+              }
+            }
+  
+            .my-project-fcc-codepen-body {
+              @include display_flex($flex-direction: column, $align-items: center);
+              background-color: #fff;
+              border-radius: 0 0 10px 10px;
+              padding: 15px 10px;
+  
+              .my-project-fcc-codepen-btn {
+                background-color: transparent;
+                font-size: 11pt;
+                color: $blue;
+                @include transition(0.3s, ease-in-out, color);
+                text-decoration: none;
+  
+                i {
+                  margin-right: 6px;
+                }
+              }
+  
+              .my-project-fcc-codepen-btn:hover {
+                cursor: pointer;
+                color: $blue-dark;
+                @include transition(0.3s, ease-in-out, color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Contact Me Page
+  #contact-me-page-body {
+    @include display_flex($flex-direction: column);
+    width: 1100px;
+    margin-bottom: 50px;
+
+    #contact-me-social-media {
+      @include display_flex($flex-direction: column);
+      width: 100%;
+
+      #contact-me-social-media-title {
+        @include display_flex($align-items: center);
+        color: $blue;
+        margin-bottom: 30px;
+        width: 100%;
+
+        i {
+          margin-right: 6px;
+        }
+
+        h2 {
+          font-size: 13pt;
+        }
+      }
+
+      #contact-me-social-media-list-body {
+        width: 100%;
+
+        #contact-me-social-media-list {
+          @include display_flex();
+          list-style: none;
+
+          li {
+            margin-right: 15px;
+            border-radius: 10px;
+            width: 45px;
+            height: 45px;
+            @include transition(0.3s, ease-in-out, background-color);
+            box-shadow: 0 0 3px 2px $gray;
+
+            a {
+              @include display_flex($justify-content: center, $align-items: center);
+              text-decoration: none;
+              border-radius: 10px;
+              width: 100%;
+              height: 100%;
+              color: $white;
+              
+              i {
+                font-size: 16pt;
+              }
+            }
+          }
+
+          li:hover {
+            @include transition(0.3s, ease-in-out, background-color);
+            cursor: pointer;
+          }
+
+          li:last-child {
+            margin-right: 0;
+          }
+
+          #contact-me-social-media-facebook {
+            background-color: #3f5c9a;
+          }
+
+          #contact-me-social-media-facebook:hover {
+            background-color: #3f5c9ac2;
+          }
+
+          #contact-me-social-media-linkedin {
+            background-color: #0073b0;
+          }
+
+          #contact-me-social-media-linkedin:hover {
+            background-color: #0073b0c2;
+          }
+
+          #contact-me-social-media-twitter {
+            background-color: #1da1f2;
+          }
+
+          #contact-me-social-media-twitter:hover {
+            background-color: #1da1f2c2;
+          }
+
+          #contact-me-social-media-whatsapp {
+            background-color: #25c477;
+          }
+
+          #contact-me-social-media-whatsapp:hover {
+            background-color: #25c477c2;
+          }
+
+          #contact-me-social-media-telegram {
+            background-color: #35ace1;
+          }
+
+          #contact-me-social-media-telegram:hover {
+            background-color: #35ace1c2;
+          }
+        }
+      }
+    }
+
+    #contact-me-send-message {
+      @include display_flex($flex-direction: column);
+      width: 100%;
+      margin-top: 60px;
+
+      #contact-me-send-message-title {
+        @include display_flex($align-items: center);
+        color: $blue;
+        margin-bottom: 30px;
+        width: 100%;
+
+        i {
+          margin-right: 6px;
+        }
+
+        h2 {
+          font-size: 13pt;
+        }
+      }
+
+      #contact-me-send-message-body {
+        width: 100%;
+
+        #contact-me-send-message-form {
+          @include display_flex($flex-direction: column);
+          border: 1px solid $gray;
+          border-radius: 10px;
+          width: 420px;
+          padding: 25px;
+
+          #contact-me-notice {
+            text-align: center;
+            font-weight: bold;
+            width: 100%;
+            margin-bottom: 30px;
+            font-size: 11pt;
+            color: $red;
+          }
+
+          .contact-me-send-message-input-group {
+            @include display_flex($flex-direction: column);
+            width: 100%;
+            margin-bottom: 20px;
+
+            label {
+              color: $black;
+              width: 100%;
+              margin-bottom: 7px;
+              font-size: 11pt;
+
+              i {
+                margin-right: 6px;
+              }
+            }
+
+            input, textarea {
+              width: 100%;
+              border: 1.5px solid $gray;
+              border-radius: 10px;
+              padding: 7px 12px;
+              @include transition(0.3s, ease-in-out, border, box-shadow);
+            }
+
+            input:focus, textarea:focus {
+              border: 1.5px solid $blue;
+              box-shadow: 0 0 2px $blue;
+              @include transition(0.3s, ease-in-out, border, box-shadow);
+            }
+
+            .input-msg-error {
+              color: $red;
+              font-size: 9pt;
+              margin-top: 7px;
+            }
+
+            textarea {
+              resize: none;
+              height: 100px;
+            }
+          }
+
+          #contact-me-send-message-button {
+            @include display_flex($justify-content: center);
+            width: 100%;
+            margin-top: 15px;
+
+            button {
+              background-color: $blue;
+              color: $white;
+              padding: 8px 13px;
+              border-radius: 30px;
+              font-size: 10pt;
+              @include transition(0.3s, ease-in-out, background-color);
+
+              i {
+                margin-right: 6px;
+              }
+            }
+
+            button:hover {
+              background-color: $blue-dark;
+              color: $gray;
+              cursor: pointer;
+              @include transition(0.3s, ease-in-out, background-color);
+            }
+          }
+
+          #contact-me-loading-send-message {
+            @include display_flex($display: none, $justify-content: center);
+            width: 100%;
+            margin-top: 10px;
+          }
+
+          #contact-me-success-message {
+            text-align: center;
+            width: 100%;
+            margin-top: 10px;
+            font-size: 9pt;
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+
+  // Modal Desktop
+  #modal-desktop-background {
+    @include display_flex($justify-content: center, $align-items: center);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $black-transparent;
+    user-select: none;
+
+    #modal-desktop-foreground {
+      @include display_flex($justify-content: space-between);
+      width: 1045px;
+      background-color: $white;
+      padding: 4px;
+      border-radius: 8px;
+
+      #modal-desktop-current-image {
+        width: 840px;
+        height: 547px;
+        border-radius: 8px;
+        box-shadow: 0 0 3px 0 $black-transparent;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 8px;
+        }
+      }
+
+      #modal-desktop-aside-menu-body {
+        @include display_flex($flex-direction: column);
+        height: 547px;
+        border-radius: 8px;
+
+        #modal-desktop-close-button {
+          @include display_flex($justify-content: center);
+          width: 100%;
+          height: 31px;
+          border-radius: 8px 8px 0 0;
+          box-shadow: 0 0 2px 0 $black-transparent;
+
+          button {
+            background-color: $blue;
+            color: $white;
+            width: 100%;
+            height: 100%;
+            @include transition(0.3s, ease-in-out, background-color, color);
+            border-radius: 8px 8px 0 0;
+
+            i {
+              margin-right: 6px;
+            }
+          }
+
+          button:hover {
+            cursor: pointer;
+            background-color: $blue-dark;
+            color: $gray;
+            @include transition(0.3s, ease-in-out, background-color, color);
+          }
+        }
+
+        #modal-desktop-image-btngroup {
+          @include display_flex($flex-direction: column, $justify-content: space-between);
+          width: 100%;
+          height: 100%;
+
+          .modal-desktop-image-button-children {
+            width: 192px;
+            height: 126.75px;
+            opacity: 1;
+            @include transition(0.3s, ease-in-out, opacity);
+            box-shadow: 0 0 2px 0 $black-transparent;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .modal-desktop-image-button-children:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            @include transition(0.3s, ease-in-out, opacity);
+          }
+
+          .modal-desktop-image-button-children:last-child {
+            border-radius: 0 0 8px 8px;
+
+            img {
+              border-radius: 0 0 5px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Modal Mobile
+  #modal-mobile-background {
+    @include display_flex($justify-content: center, $align-items: center);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $black-transparent;
+
+    #modal-mobile-foreground {
+      @include display_flex($flex-direction: column);
+      width: 800px;
+      background-color: $white;
+      padding: 4px;
+      border-radius: 8px;
+
+      #modal-mobile-close-button {
+        @include display_flex($justify-content: center);
+        width: 100%;
+        height: 40px;
+        border-radius: 8px 8px 0 0;
+        box-shadow: 0 0 3px 0 $black-transparent;
+
+        button {
+          background-color: $blue;
+          color: $white;
+          width: 100%;
+          height: 100%;
+          @include transition(0.3s, ease-in-out, background-color, color);
+          border-radius: 8px 8px 0 0;
+
+          i {
+            margin-right: 6px;
+          }
+        }
+
+        button:hover {
+          cursor: pointer;
+          background-color: $blue-dark;
+          color: $gray;
+          @include transition(0.3s, ease-in-out, background-color, color);
+        }
+      }
+
+      #modal-mobile-image-body {
+        display: grid;
+        position: relative;
+        grid-template-rows: repeat(3, 1fr);
+        box-shadow: 0 0 3px 0 $black-transparent;
+
+        #modal-mobile-current-image {
+          width: 100%;
+          height: 500px;
+          border-radius: 0 0 8px 8px;
+          grid-row: 1/4;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 0 0 8px 8px;
+          }
+        }
+
+        #modal-mobile-btn-left {
+          position: absolute;
+          color: $white;
+          grid-row: 2/3;
+          align-self: center;
+          background-color: $blue;
+          padding: 30px 20px;
+          border-radius: 0 10px 10px 0;
+          @include transition(0.3s, ease-in-out, background-color, color);
+          box-shadow: 0 0 2px 0 $black-transparent;
+        }
+
+        #modal-mobile-btn-left:hover {
+          cursor: pointer;
+          background-color: $blue-dark;
+          color: $gray;
+          @include transition(0.3s, ease-in-out, background-color, color);
+        }
+
+        #modal-mobile-btn-right {
+          position: absolute;
+          color: $white;
+          grid-row: 2/3;
+          align-self: center;
+          justify-self: flex-end;
+          background-color: $blue;
+          padding: 30px 20px;
+          border-radius: 10px 0 0 10px;
+          @include transition(0.3s, ease-in-out, background-color, color);
+          box-shadow: 0 0 2px 0 $black-transparent;
+        }
+
+        #modal-mobile-btn-right:hover {
+          cursor: pointer;
+          background-color: $blue-dark;
+          color: $gray;
+          @include transition(0.3s, ease-in-out, background-color, color);
+        }
+      }
+    }
+  }
+}
+
+/* BREAKPOINTS */
+@media screen and (max-width: 1200px) {
+  #main-body {
+    // Home Page
+    #homepage-body {
+      width: 850px;
+  
+      #slider-body {
+        height: 510px;
+      }
+    }
+
+    // Clients Projects Page
+    #clients-projects-page-body {
+      width: 850px;
+  
+      #clients-projects-page {  
+        #clients-projects-body {
+          .clients-projects {
+            width: 250px;
+    
+            .client-project-data {
+              .client-project-image {
+                height: 163px;
+    
+                img {
+                  height: 163px;
+                }
+              }
+    
+              .client-project-btngroup {
+                .client-project-button {    
+                  button, a {
+                    padding: 14px 0;
+                  }
+                }
+              }
+
+              .client-project-description-body {
+                .client-project-description-btn {
+                  font-size: 10pt;
+                }
+    
+                .client-project-description {
+                  font-size: 10pt;
+                }
+    
+                .client-project-description-btn-close {
+                  font-size: 10pt;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // My Projects Page
+    #my-projects-page-body {
+      width: 850px;
+  
+      #my-projects-page {  
+        #my-projects-body {
+          .my-projects {
+            width: 250px;
+    
+            .my-project-data {
+              .my-project-image {
+                height: 163px;
+    
+                img {
+                  height: 163px;
+                }
+              }
+    
+              .my-project-btngroup {
+                .my-project-button {    
+                  button, a {
+                    padding: 14px 0;
+                  }
+                }
+              }
+
+              .my-project-description-body {
+                .my-project-description-btn {
+                  font-size: 10pt;
+                }
+
+                .my-project-description {
+                  font-size: 10pt;
+                }
+
+                .my-project-description-btn-close {
+                  font-size: 10pt;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #my-projects-fcc-page {  
+        #my-projects-fcc-body {
+          .my-projects-fcc {
+            width: 250px;
+    
+            .my-project-fcc-data {
+              .my-project-fcc-image {
+                height: 163px;
+    
+                img {
+                  height: 163px;
+                }
+              }
+    
+              .my-project-fcc-codepen-body {
+                .my-project-fcc-codepen-btn {
+                  font-size: 10pt;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Contact Me Page
+    #contact-me-page-body {
+      width: 930px;
+    }
+
+    // Modal Desktop
+    #modal-desktop-background {
+      #modal-desktop-foreground {
+        width: 800px;
+
+        #modal-desktop-current-image {
+          width: 635px;
+          height: 415px;
+        }
+
+        #modal-desktop-aside-menu-body {
+          height: 415px;
+
+          #modal-desktop-close-button {
+            height: 31px;
+          }
+
+          #modal-desktop-image-btngroup {
+            .modal-desktop-image-button-children {
+              width: 152px;
+              height: 93px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 970px) {
+  #main-body {
+    // Contact Me Page
+    #contact-me-page-body {
+      width: 730px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #main-body {
+    // Navbar
+    #main-navbar {
+      @include display_flex($flex-direction: column, $justify-content: space-between, $align-items: center);
+
+      #logo-body-portfolio {
+        margin: 15px 0 25px 0;
+      }
+
+      #menu-navbar {
+        margin-right: 0;
+      }
+    }
+
+    // Home Page
+    #homepage-body {
+      width: 700px;
+  
+      #slider-body {
+        height: 420px;
+
+        .slider-legend {
+          padding: 10px 15px;
+        }
+      }
+    }
+
+    // Clients Projects Page
+    #clients-projects-page-body {
+      width: 700px;
+  
+      #clients-projects-page {  
+        #clients-projects-body {
+          .clients-projects {
+            width: 203px;
+    
+            .client-project-data {
+              .client-project-image {
+                height: 132px;
+    
+                img {
+                  height: 132px;
+                }
+              }
+    
+              .client-project-btngroup {
+                .client-project-button {    
+                  button, a {
+                    padding: 13px 0;
+
+                    i {
+                      font-size: 10pt;
+                    }
+                  }
+                }
+              }
+              .client-project-description-body {
+                .client-project-description-btn {
+                  font-size: 10pt;
+                }
+    
+                .client-project-description {
+                  font-size: 9pt;
+                }
+    
+                .client-project-description-btn-close {
+                  font-size: 9pt;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // My Projects Page
+    #my-projects-page-body {
+      width: 700px;
+
+      #my-projects-page {  
+        #my-projects-body {
+          .my-projects {
+            width: 203px;
+
+            .my-project-data {
+              .my-project-image {
+                height: 132px;
+
+                img {
+                  height: 132px;
+                }
+              }
+
+              .my-project-btngroup {
+                .my-project-button {    
+                  button, a {
+                    padding: 13px 0;
+
+                    i {
+                      font-size: 10pt;
+                    }
+                  }
+                }
+              }
+
+              .my-project-description-body {
+                .my-project-description-btn {
+                  font-size: 10pt;
+                }
+
+                .my-project-description {
+                  font-size: 9pt;
+                }
+
+                .my-project-description-btn-close {
+                  font-size: 9pt;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #my-projects-fcc-page {  
+        #my-projects-fcc-body {
+          .my-projects-fcc {
+            width: 203px;
+    
+            .my-project-fcc-data {
+              .my-project-fcc-image {
+                height: 132px;
+    
+                img {
+                  height: 132px;
+                }
+              }
+    
+              .my-project-fcc-codepen-body {
+                .my-project-fcc-codepen-btn {
+                  font-size: 10pt;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Modal Mobile
+    #modal-mobile-background {
+      #modal-mobile-foreground {
+        width: 700px;
+
+        #modal-mobile-image-body {
+          #modal-mobile-current-image {
+            height: 466px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #main-body {
+    // Navbar
+    #main-navbar {
+      @include display_flex($flex-direction: column, $justify-content: space-between, $align-items: center);
+
+      #logo-body-portfolio {
+        margin: 15px 0 25px 0;
+      }
+
+      #menu-navbar {
+        @include display_flex($flex-direction: column);
+        margin-right: 0;
+
+        #language-btngroup {
+          margin-right: 0;
+        }
+
+        #menu-list {
+          @include display_flex($flex-direction: column, $align-items: center);
+          margin: 20px 0 10px 0;
+
+          li {
+            margin: 0 0 7px 0;
+          }
+
+          li:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    // Home Page
+    #homepage-body {
+      width: 500px;
+  
+      #slider-body {
+        height: 300px;
+
+        .slider-legend {
+          padding: 10px 15px;
+        }
+      }
+    }
+
+    // Clients Projects Page
+    #clients-projects-page-body {
+      width: 500px;
+
+      #clients-projects-page {  
+        #clients-projects-body {
+          @include display_flex($flex-direction: column);
+
+          .clients-projects {
+            width: 500px;
+
+            .client-project-data {
+              .client-project-image {
+                height: 316px;
+
+                img {
+                  height: 316px;
+                }
+              }
+
+              .client-project-btngroup {
+                .client-project-button {    
+                  button, a {
+                    padding: 20px 0;
+
+                    i {
+                      font-size: 13pt;
+                    }
+                  }
+                }
+              }
+
+              .client-project-description-body {
+                .client-project-description-btn {
+                  font-size: 11pt;
+                }
+
+                .client-project-description {
+                  font-size: 10pt;
+                }
+
+                .client-project-description-btn-close {
+                  font-size: 10pt;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // My Projects Page
+    #my-projects-page-body {
+      width: 500px;
+
+      #my-projects-page {  
+        #my-projects-body {
+          @include display_flex($flex-direction: column);
+
+          .my-projects {
+            width: 500px;
+
+            .my-project-data {
+              .my-project-image {
+                height: 316px;
+
+                img {
+                  height: 316px;
+                }
+              }
+
+              .my-project-btngroup {
+                .my-project-button {    
+                  button, a {
+                    padding: 20px 0;
+
+                    i {
+                      font-size: 13pt;
+                    }
+                  }
+                }
+              }
+
+              .my-project-description-body {
+                .my-project-description-btn {
+                  font-size: 11pt;
+                }
+
+                .my-project-description {
+                  font-size: 10pt;
+                }
+
+                .my-project-description-btn-close {
+                  font-size: 10pt;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #my-projects-fcc-page {  
+        #my-projects-fcc-body {
+          @include display_flex($flex-direction: column);
+
+          .my-projects-fcc {
+            width: 500px;
+    
+            .my-project-fcc-data {
+              .my-project-fcc-image {
+                height: 316px;
+    
+                img {
+                  height: 316px;
+                }
+              }
+    
+              .my-project-fcc-codepen-body {
+                .my-project-fcc-codepen-btn {
+                  font-size: 11pt;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Contact Me Page
+    #contact-me-page-body {
+      width: 500px;
+
+      #contact-me-send-message {
+        #contact-me-send-message-body {
+          #contact-me-send-message-form {
+            @include display_flex($flex-direction: column);
+            width: 500px;
+            padding: 25px;
+          }
+        }
+      }
+    }
+
+    // Modal Mobile
+    #modal-mobile-background {
+      #modal-mobile-foreground {
+        width: 550px;
+
+        #modal-mobile-image-body {
+          #modal-mobile-current-image {
+            height: 365px;
+          }
+
+          #modal-mobile-btn-left, #modal-mobile-btn-right {
+            padding: 25px 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #main-body {
+    // Home Page
+    #homepage-body {
+      width: 300px;
+  
+      #slider-body {
+        height: 180px;
+
+        .slider-legend {
+          padding: 10px 15px;
+        }
+      }
+    }
+
+    // Clients Projects Page
+    #clients-projects-page-body {
+      width: 300px;
+
+      #clients-projects-page {  
+        #clients-projects-body {
+          .clients-projects {
+            width: 300px;
+
+            .client-project-data {
+              .client-project-image {
+                height: 196px;
+
+                img {
+                  height: 196px;
+                }
+              }
+
+              .client-project-btngroup {
+                .client-project-button {    
+                  button, a {
+                    padding: 20px 0;
+
+                    i {
+                      font-size: 11pt;
+                    }
+                  }
+                }
+              }
+
+              .client-project-description-body {
+                .client-project-description-btn {
+                  font-size: 10pt;
+                }
+
+                .client-project-description {
+                  font-size: 9pt;
+                }
+
+                .client-project-description-btn-close {
+                  font-size: 9pt;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // My Projects Page
+    #my-projects-page-body {
+      width: 300px;
+
+      #my-projects-page {  
+        #my-projects-body {
+          .my-projects {
+            width: 300px;
+
+            .my-project-data {
+              .my-project-image {
+                height: 196px;
+
+                img {
+                  height: 196px;
+                }
+              }
+
+              .my-project-btngroup {
+                .my-project-button {    
+                  button, a {
+                    padding: 20px 0;
+
+                    i {
+                      font-size: 11pt;
+                    }
+                  }
+                }
+              }
+
+              .my-project-description-body {
+                .my-project-description-btn {
+                  font-size: 10pt;
+                }
+
+                .my-project-description {
+                  font-size: 9pt;
+                }
+
+                .my-project-description-btn-close {
+                  font-size: 8pt;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #my-projects-fcc-page {  
+        #my-projects-fcc-body {
+          .my-projects-fcc {
+            width: 300px;
+    
+            .my-project-fcc-data {
+              .my-project-fcc-image {
+                height: 196px;
+    
+                img {
+                  height: 196px;
+                }
+              }
+    
+              .my-project-fcc-codepen-body {
+                .my-project-fcc-codepen-btn {
+                  font-size: 10pt;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Contact Me Page
+    #contact-me-page-body {
+      width: 300px;
+
+      #contact-me-send-message {
+        #contact-me-send-message-body {
+          #contact-me-send-message-form {
+            width: 300px;
+            padding: 25px;
+          }
+        }
+      }
+    }
+
+    // Modal Mobile
+    #modal-mobile-background {
+      #modal-mobile-foreground {
+        width: 400px;
+
+        #modal-mobile-image-body {
+          #modal-mobile-current-image {
+            height: 265px;
+          }
+
+          #modal-mobile-btn-left, #modal-mobile-btn-right {
+            padding: 20px 15px;
+          }
+        }
+      }
+    }
+  }
+}

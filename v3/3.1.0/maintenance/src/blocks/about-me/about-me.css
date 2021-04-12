@@ -1,0 +1,28 @@
+.about-me {
+  margin-top: 4em;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.about-me__title {
+  margin-bottom: 1em;
+  color: var(--black-light);
+}
+
+.about-me__title_night_mode {
+  font-weight: normal;
+  color: var(--white);
+}
+
+.about-me__title-icon {
+  margin-right: .5em;
+}
+
+.about-me__text {
+  font-size: 11pt;
+  color: var(--black-light);
+}
+
+.about-me__text_night_mode {
+  color: var(--white);
+}

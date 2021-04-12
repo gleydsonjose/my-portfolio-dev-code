@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Gleydson José da Silva">
+    <meta name="description" content="Este website é o portfólio de Gleydson José da Silva">
+    <meta name="keywords" content="SatuctKode, SatuctKode Portfólio, Gleydson José da Silva">
+    <script src="https://kit.fontawesome.com/d22aa83c9e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagens/satuctkode-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>SatuctKode Portfólio</title>
+</head>
+<body>
+    <!-- Logo -->
+    <header>
+        <img src="imagens/satuctkode-logo.png" alt="SatuctKode Logo">
+    </header>
+    <!-- / Logo / -->
+
+    <!-- Main Section -->
+    <section id="portfolio-body">
+        <div id="name-portfolio">
+            <h3>Nome</h3>
+            <p>Gleydson José da Silva - 22 Anos</p>
+        </div>
+
+        <div id="profession-portfolio">
+            <h3>Profissão</h3>
+            <p>Desenvolvedor Web Fullstack</p>
+        </div>
+
+        <div id="about-me-portfolio">
+            <h3>Sobre mim</h3>
+            <p>Entrei nesse mundo da programação no 4° trimestre de 2017, mas não como desenvolvedor web e sim de software, iniciei em Java e fiquei por um tempo estudando ele e um pouco da parte web, mas com mais algum tempo de estudos eu acabei desistindo do Java porque eu vi uma opção melhor que eu acabei gostando mais, o "Python", fiz alguns projetos com ele mas só postei 1 no repositório do meu github, desenvolvimento de software é uma área que ainda continuo gostando, mas acabei mudando para desenvolvimento web em 2019, eu já estudava coisas dessa área antes, mas não com tanta frequência igual a este ano, e isso ocasionou alguns projetos que estão neste portfólio. Desenvolvimento web é realmente a área que estou focando mais em meus estudos, eu pretendo continuar aprendendo mais e mais como sempre fiz desde o inicio, e sobre qual lado eu estou nessa área, eu acabei escolhendo os dois(Fullstack), apesar de gostar mais do Back-end.</p>
+        </div>
+
+        <div id="currently-using">
+            <h3>Venho utilizando atualmente</h3>
+            <div>
+                <img src="imagens/html5.png" alt="HTML5 Logo" title="HTML5 Logo">
+                <img src="imagens/css3.png" alt="CSS3 Logo" title="CSS3 Logo">
+                <img src="imagens/sass.png" alt="SASS Logo" title="SASS Logo">
+                <img src="imagens/bootstrap.png" alt="Bootstrap 4 Logo" title="Bootstrap 4 Logo">
+                <img src="imagens/js.png" alt="JS Logo" title="Javascript Logo">
+                <img src="imagens/vuejs.png" alt="Vue.JS Logo" title="Vue.JS Logo">
+                <img src="imagens/php.png" alt="PHP Logo" title="PHP Logo">
+                <img src="imagens/mysql.svg" alt="MySQL Logo" title="MySQL Logo">
+                <img src="imagens/wordpress.png" alt="Wordpress Logo" title="Wordpress Logo">
+                <img src="imagens/docker.png" alt="Docker Logo" title="Docker Logo">
+            </div>
+        </div>
+
+        <div id="contact-me-portfolio">
+            <h3>Contate me</h3>
+            <div>
+                <a href="https://www.facebook.com/gleydsonjosedasilva" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/gleydson-jose-8600a2189" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://twitter.com/gleydsongst" target="_blank">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+
+                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=55081988101515" target="_blank">
+                    <i class="fab fa-whatsapp-square"></i>
+                </a>
+
+                <a href="https://t.me/GleydsonJose" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div id="github-repository">
+            <h3>Meu repositório GitHub</h3>
+            <a href="https://github.com/satuctkode" target="_blank">
+                <i class="fab fa-github-square"></i>
+            </a>
+        </div>
+
+        <div id="my-web-projects">
+            <h3 id="title"><i class="fas fa-th-list"></i>Meus projetos web</h3>
+
+            <div id="project-inner-div" v-for="project in projectsData">
+                <div id="info-project">
+                    <img v-bind:src="project.projectImage.img" v-bind:alt="project.projectImage.alt">
+                    <div>
+                        <h3>{{ project.projectName }}</h3>
+                        <p>{{ project.projectDescription }}</p>
+                    </div>
+                </div>
+
+                <div id="btn-group-project">
+                    <a class="open-project-images-modal" v-on:click="projectImagesModal(project.projectAllImages)">
+                        <i class="fas fa-images"></i>
+                        <p id="project-images-title">Ver imagens</p>
+                    </a>
+                    
+                    <a v-bind:href="project.projectWebsite" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <p id="project-website-title">Ver site funcionando</p>
+                    </a>
+
+                    <a v-bind:href="project.projectSourceCode" target="_blank">
+                        <i class="fas fa-code"></i>
+                        <p id="project-source-code-title">Ver código fonte do projeto</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Images Modal -->
+        <div id="bg-main-project-images-modal">
+            <div id="bg-inner-project-images-modal">
+                <i class="fas fa-times-circle" id="close-modal"></i>
+
+                <div id="main-image-div">
+                    <img id="main-image" src="" alt="">
+
+                    <div id="arrows">
+                        <button type="button" id="arrow-left">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+
+                        <button type="button" id="arrow-right">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="btn-group-images">
+                    <img class="btn-image" src="" alt="">
+                    <img class="btn-image" src="" alt="">
+                    <img class="btn-image" src="" alt="">
+                    <img class="btn-image" src="" alt="">
+                    <img class="btn-image" src="" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- / Project Images Modal / -->
+    </section>
+    <!-- / Main Section / -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/projects-data.js"></script>
+    <!-- / Scripts / -->
+</body>
+</html>

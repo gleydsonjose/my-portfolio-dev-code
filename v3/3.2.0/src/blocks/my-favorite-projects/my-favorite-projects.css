@@ -1,0 +1,122 @@
+.my-favorite-projects {
+  margin-top: 4em;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.my-favorite-projects__title {
+  margin-bottom: 1em;
+  color: var(--black-light);
+}
+
+.my-favorite-projects__title_night_mode {
+  font-weight: normal;
+  color: var(--white);
+}
+
+.my-favorite-projects__title-icon {
+  margin-right: .5em;
+}
+
+.my-favorite-projects__slider {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid var(--gray-light);
+}
+
+.my-favorite-projects__slider_night_mode {
+  border: 1px solid var(--black-light);
+}
+
+.my-favorite-projects__slider_image {
+  position: relative;
+  width: 100%;
+  grid-row: 1 / 3;
+  border-radius: 3px;
+}
+
+.my-favorite-projects__slider-btngroup {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  grid-row: 1 / 2;
+  align-self: flex-end;
+  align-items: center;
+  margin-bottom: -1.35em;
+}
+
+.my-favorite-projects__slider-loader {
+  width: 40px;
+  height: 40px;
+}
+
+.my-favorite-projects__slider-button {
+  background-color: var(--black-light);
+  color: var(--white);
+  padding: .4em .5em;
+  outline: none;
+  border: none;
+  font-size: 1.5em;
+  border-radius: 3px;
+  transition: background-color .4s ease-in-out, color .4s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-favorite-projects__slider-button:hover {
+  cursor: pointer;
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.my-favorite-projects__slider-button_disabled {
+  opacity: .5;
+}
+
+.my-favorite-projects__slider-button_disabled:hover {
+  cursor: default;
+  background-color: var(--black-light);
+  color: var(--white);
+  opacity: .5;
+}
+
+.my-favorite-projects__slider-description {
+  width: 100%;
+  position: absolute;
+  background-color: var(--black-transparent);
+  grid-row: 2 / 3;
+  align-self: flex-end;
+  color: var(--white);
+  font-size: 11pt;
+  padding: 1em .5em;
+  text-align: center;
+  border-radius: 0 0 3px 3px;
+}
+
+@media screen and (max-width: 750px) {
+  .my-favorite-projects__slider {
+    border-radius: 3px 3px 0 0;
+  }
+  
+  .my-favorite-projects__slider_image {
+    border-radius: 3px 3px 0 0;
+  }
+
+  .my-favorite-projects__slider-description {
+    position: relative;
+    background-color: var(--black-light);
+    border-top: 1px solid var(--gray-light);
+    grid-row: 3 / 3;
+    font-size: 10pt;
+    padding: .7em .5em
+  }
+
+  .my-favorite-projects__slider-description_night_mode {
+    background-color: var(--white);
+    color: var(--black-light);
+  }
+}

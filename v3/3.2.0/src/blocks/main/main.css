@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.main_night_mode {
+  background-color: var(--black-light2);
+}

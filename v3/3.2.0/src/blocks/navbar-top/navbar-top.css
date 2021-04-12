@@ -1,0 +1,233 @@
+.navbar-top {
+  display: flex;
+  background-color: var(--black-light);
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  width: 100%;
+}
+
+.navbar-top__left-group {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-top__menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-top__menu-item {
+  padding: 0.5em 0.6em;
+  font-size: 11pt;
+  border-radius: 3px;
+  cursor: pointer;
+  background: transparent;
+  color: var(--white);
+  transition: background-color 0.4s ease-in-out;
+  margin-right: 0.7em;
+}
+
+.navbar-top__menu-item:last-child {
+  margin-right: 0;
+}
+
+.navbar-top__menu-item:hover {
+  background-color: var(--red);
+}
+
+.navbar-top__menu-item_active {
+  background-color: var(--red);
+  color: var(--white);
+  cursor: default;
+}
+
+.navbar-top__night-mode-button {
+  outline: none;
+  border: none;
+  padding: 0.5em 0.6em;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: var(--white);
+  transition: background-color 0.4s ease-in-out;
+  margin-left: 0.8em;
+}
+
+.navbar-top__night-mode-button:hover {
+  cursor: pointer;
+  background-color: var(--red);
+}
+
+.navbar-top__night-mode-icon {
+  font-size: 1.3em;
+  margin-right: 0.3em;
+}
+
+.navbar-top__search-bar-button {
+  outline: none;
+  border: none;
+  padding: 0.5em 0.6em;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: var(--white);
+  transition: background-color 0.4s ease-in-out;
+  margin-left: 0.8em;
+}
+
+.navbar-top__search-bar-button:hover {
+  cursor: pointer;
+  background-color: var(--red);
+}
+
+.navbar-top__search-bar-icon {
+  font-size: 1.3em;
+  margin-right: 0.3em;
+}
+
+.navbar-top__language-select {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 0.7em;
+  position: relative;
+  color: var(--black-light);
+  width: 11.5em;
+}
+
+.navbar-top__language-select-inner {
+  background-color: var(--white);
+  padding: 0.4em 0.6em;
+  font-size: 11pt;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid var(--gray);
+  transition: background-color 0.15s ease-in-out;
+  justify-content: space-between;
+  border-radius: 3px;
+}
+
+.navbar-top__language-select-inner:hover {
+  background-color: var(--gray);
+}
+
+.navbar-top__language-select-inner-text {
+  padding-right: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-top__language-select-text-icon {
+  width: 23px;
+  height: 16.5px;
+  margin-right: 0.4em;
+}
+
+.nxavbar-top__language-select-icon {
+  padding-top: 0.1em;
+}
+
+.navbar-top__language-option {
+  background-color: var(--white);
+  border: 1px solid var(--gray);
+  position: absolute;
+  list-style: none;
+  width: 100%;
+  top: 2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 11pt;
+}
+
+.navbar-top__language-option-item {
+  display: flex;
+  align-items: center;
+  padding: 0.4em 0.6em;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.navbar-top__language-option-item:hover {
+  background-color: var(--gray);
+}
+
+.navbar-top__language-option-icon {
+  width: 23px;
+  height: 16.5px;
+  margin-right: 0.4em;
+}
+
+.navbar-top__right-group {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-top__social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-top__social-media-item {
+  font-size: 1.3em;
+  padding: 0.25em;
+  color: var(--white);
+  background-color: transparent;
+  margin-right: 0.3em;
+  border-radius: 3px;
+  transition: background-color 0.4s ease-in-out;
+  width: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.navbar-top__social-media-item:last-child {
+  margin-right: 0;
+}
+
+.navbar-top__social-media-item:hover {
+  cursor: pointer;
+  background-color: var(--red);
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-top {
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 0.9em 1em;
+  }
+
+  .navbar-top__left-group {
+    flex-flow: column nowrap;
+  }
+
+  .navbar-top__menu {
+    padding-left: 0;
+    margin-top: 0.7em;
+  }
+
+  .navbar-top__night-mode-button {
+    margin-left: 0;
+    margin-top: 0.8em;
+  }
+
+  .navbar-top__search-bar-button {
+    margin-left: 0;
+    margin-top: 0.8em;
+  }
+
+  .navbar-top__language-select {
+    margin-left: 0;
+    margin-top: 0.7em;
+  }
+
+  .navbar-top__right-group {
+    margin-top: 0.7em;
+  }
+}

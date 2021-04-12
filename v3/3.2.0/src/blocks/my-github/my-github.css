@@ -1,0 +1,68 @@
+.my-github {
+  margin-top: 3.1em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+
+.my-github__title {
+  margin-bottom: 1em;
+  color: var(--black-light);
+}
+
+.my-github__title_night_mode {
+  font-weight: normal;
+  color: var(--white);
+}
+
+.my-github__title-icon {
+  margin-right: 0.5em;
+}
+
+.my-github__details {
+  display: flex;
+  background-color: var(--black-light);
+  color: var(--white);
+  border-radius: 3px;
+}
+
+.my-github__details_night_mode {
+  background-color: var(--white);
+  color: var(--black-light);
+}
+
+.my-github__profile-img {
+  width: 82px;
+  height: 100%;
+  border-radius: 3px 0 0 3px;
+}
+
+.my-github__repositories {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0.5em 2.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-github__repositories-title {
+  font-weight: 400;
+  font-size: 13pt;
+}
+
+.my-github__repositories-total {
+  font-size: 12pt;
+  margin-top: 0.2em;
+}
+
+.my-github__repositories-link {
+  font-size: 12pt;
+  margin-top: 0.2em;
+  text-decoration: none;
+  color: var(--red);
+  transition: color 0.3s ease-in-out;
+}
+
+.my-github__repositories-link:hover {
+  color: var(--red-dark);
+}

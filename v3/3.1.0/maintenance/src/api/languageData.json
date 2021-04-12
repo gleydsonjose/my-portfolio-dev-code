@@ -1,0 +1,870 @@
+{
+  "ptbr": {
+    "navbarTop": {
+      "mainLogo": {
+        "imgSrc": "./images/logo.png",
+        "imgAlt": "Logo principal"
+      },
+      "menu": {
+        "homeText": "Inicio",
+        "projectsText": "Projetos"
+      },
+      "nightMode": {
+        "lightText": "Modo dia",
+        "nightText": "Modo noite"
+      },
+      "searchBarButton": {
+        "text": "Buscar"
+      },
+      "languageSelect": {
+        "defaultText": "Escolha um idioma",
+        "languages": [
+          {
+            "id": 0,
+            "imgSrc": "./images/languages/br-flag.png",
+            "imgAlt": "Brasil icon",
+            "text": "Português",
+            "languageTag": "ptbr",
+            "status": false
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/languages/us-flag.png",
+            "imgAlt": "EUA icon",
+            "text": "Inglês",
+            "languageTag": "en",
+            "status": false
+          }
+        ]
+      }
+    },
+    "home": {
+      "myFavoriteProjects": {
+        "title": "Meus projetos favoritos",
+        "projects": [
+          {
+            "id": 0,
+            "imgSrc": "./images/my-favorite-projects/image-1.png",
+            "imgAlt": "BSConsult test", 
+            "description": "Este projeto foi um teste que a BSConsult me enviou."
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/my-favorite-projects/image-2.png",
+            "imgAlt": "SatuctGames Shop",
+            "description": "Esse projeto foi um dos que eu mais gostei de ter criado, ele é simplesmente uma loja de games que há carrinho, área de login e cadastro, e um painel de controle para usuários, produtos e cupons de desconto."
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/my-favorite-projects/image-3.png",
+            "imgAlt": "JSA Project",
+            "description": "Este projeto já teve várias versões, ele é sobre serviços em ar condicionado e o foco dele atualmente é em apenas uma única página(chamado de OnePage), apesar de que todas suas versões anteriores eram em várias páginas."
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/my-favorite-projects/image-4.png",
+            "imgAlt": "Metrix One",
+            "description": "Meu primeiro trabalho como freelancer foi criar esta Landing Page para a Metrix One."
+          }
+        ]
+      },
+      "aboutMe": {
+        "title": "Sobre mim",
+        "text": "Desde criança eu tive contato com computadores, mas o mais engraçado de tudo é que eu apenas gostava do hardware. Isso mesmo, desde cedo eu já tinha contato com placa mãe, processador e coisas do tipo, e claro que pode ser que isso não seja legal para alguns, mas eu gostei muito disso. No entanto, eu não era e nem sou nenhum especialista em hardware, apenas sei o básico para não passar mal quando houver algum problema. Só que com passar do tempo eu fui gostando de software também, e por isso, logo no final de 2017 eu comecei a ter contato com programação, mas como todo iniciante eu passei por várias linguagens de programação sem saber qual escolher, mas depois eu escolhi ser desenvolvedor web e continuo estudando muito até o momento. Uma das minhas paixões é a tecnologia, portanto tudo que envolve essa área eu estou interessado, eu acho incrível como essa área vem evoluindo e mudando o mundo."
+      },
+      "toolsICurrentlyUse": {
+        "title": "Ferramentas que uso atualmente",
+        "tools": [
+          {
+            "id": 0,
+            "imgSrc": "./images/tools/html5.png",
+            "imgAlt": "HTML5",
+            "title": "HTML5"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/tools/css3.png",
+            "imgAlt": "CSS3",
+            "title": "CSS3"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/tools/js.png",
+            "imgAlt": "JavaScript",
+            "title": "JavaScript"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/tools/ts.png",
+            "imgAlt": "TypeScript",
+            "title": "TypeScript"
+          },
+          {
+            "id": 4,
+            "imgSrc": "./images/tools/gulp.png",
+            "imgAlt": "GulpJS",
+            "title": "GulpJS"
+          },
+          {
+            "id": 5,
+            "imgSrc": "./images/tools/react.png",
+            "imgAlt": "ReactJS",
+            "title": "ReactJS"
+          },
+          {
+            "id": 6,
+            "imgSrc": "./images/tools/php.png",
+            "imgAlt": "PHP",
+            "title": "PHP"
+          },
+          {
+            "id": 7,
+            "imgSrc": "./images/tools/mysql.png",
+            "imgAlt": "MySQL",
+            "title": "MySQL"
+          }
+        ]
+      },
+      "toolsIHaveUsed": {
+        "title": "Ferramentas que já utilizei",
+        "tools": [
+          {
+            "id": 0,
+            "imgSrc": "./images/tools/sass.png",
+            "imgAlt": "Sass",
+            "title": "Sass"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/tools/bootstrap.png",
+            "imgAlt": "Bootstrap 4",
+            "title": "Bootstrap 4"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/tools/vuejs.png",
+            "imgAlt": "VueJS",
+            "title": "VueJS"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/tools/java.png",
+            "imgAlt": "Java",
+            "title": "Java"
+          },
+          {
+            "id": 4,
+            "imgSrc": "./images/tools/python.png",
+            "imgAlt": "Python",
+            "title": "Python"
+          },
+          {
+            "id": 5,
+            "imgSrc": "./images/tools/docker.png",
+            "imgAlt": "Docker",
+            "title": "Docker"
+          }
+        ]
+      },
+      "myGitHub": {
+        "title": "Meu GitHub",
+        "imgAlt": "Imagem do perfil do GitHub",
+        "repositoriesTitle": "Repositórios"
+      }
+    },
+    "projects": {
+      "alert": {
+        "text": "Nessa página tem alguns projetos que eu mais gostei, Se você quer ver mais projetos vá para meu repositório do GitHub e dê uma olhada.",
+        "linkText": "Clique aqui para ir ao meu repositório GitHub."
+      },
+      "customerProjects": {
+        "title": "Projetos de clientes",
+        "buttonText": "Mostrar detalhes"
+      },
+      "myProjects": {
+        "title": "Meus projetos",
+        "buttonText": "Mostrar detalhes"
+      }
+    },
+    "modal": {
+      "searchBarModal": {
+        "inputPlaceholder": "Buscar um projeto"
+      },
+      "projectDetailsModal": {
+        "buttonSourceCodeText": "Código fonte",
+        "buttonWebsiteText": "Website",
+        "descriptionTitle": "Descrição"
+      }
+    },
+    "projectsData": [
+      {
+        "id": 0,
+        "name": "Metrix One",
+        "type": "customerProjects",
+        "titleType": "Projetos de clientes",
+        "sourceCodeLink": "",
+        "websiteLink": "https://metrix.one",
+        "imgSrc": "./images/customer-projects/metrixOne/image-1.png",
+        "imgAlt": "Metrix One",
+        "description": "Meu primeiro trabalho como freelancer foi criar esta Landing Page para a Metrix One.",
+        "imagesSlider": [
+          {
+            "id": 0,
+            "imgSrc": "./images/customer-projects/metrixOne/image-1.png",
+            "imgAlt": "Metrix One imagem 1"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/customer-projects/metrixOne/image-2.png",
+            "imgAlt": "Metrix One imagem 2"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/customer-projects/metrixOne/image-3.png",
+            "imgAlt": "Metrix One imagem 3"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/customer-projects/metrixOne/image-4.png",
+            "imgAlt": "Metrix One imagem 4"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "BSConsult test",
+        "type": "myProjects",
+        "titleType": "Meus projetos",
+        "sourceCodeLink": "https://github.com/satuctkode/BSConsult-test",
+        "websiteLink": "https://satuctkode.github.io/BSConsult-test",
+        "imgSrc": "./images/my-projects/bsconsult-test/image-1.png",
+        "imgAlt": "BSConsult test",
+        "description": "Este projeto foi um teste que a BSConsult me enviou.",
+        "imagesSlider": [
+          {
+            "id": 0,
+            "imgSrc": "./images/my-projects/bsconsult-test/image-1.png",
+            "imgAlt": "BSConsult test imagem 1"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/my-projects/bsconsult-test/image-2.png",
+            "imgAlt": "BSConsult test imagem 2"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/my-projects/bsconsult-test/image-3.png",
+            "imgAlt": "BSConsult test imagem 3"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/my-projects/bsconsult-test/image-4.png",
+            "imgAlt": "BSConsult test imagem 4"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "SatuctGames Shop",
+        "type": "myProjects",
+        "titleType": "Meus projetos",
+        "sourceCodeLink": "https://github.com/satuctkode/SatuctGames_Project_PHP_MySQL",
+        "websiteLink": "http://satuctgames-shop.epizy.com",
+        "imgSrc": "./images/my-projects/satuctgames-shop/image-1.png",
+        "imgAlt": "SatuctGames Shop",
+        "description": "Esse projeto foi um dos que eu mais gostei de ter criado, ele é simplesmente uma loja de games que há carrinho, área de login e cadastro, e um painel de controle para usuários, produtos e cupons de desconto.",
+        "imagesSlider": [
+          {
+            "id": 0,
+            "imgSrc": "./images/my-projects/satuctgames-shop/image-1.png",
+            "imgAlt": "SatuctGames Shop imagem 1"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/my-projects/satuctgames-shop/image-2.png",
+            "imgAlt": "SatuctGames Shop imagem 2"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/my-projects/satuctgames-shop/image-3.png",
+            "imgAlt": "SatuctGames Shop imagem 3"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/my-projects/satuctgames-shop/image-4.png",
+            "imgAlt": "SatuctGames Shop imagem 4"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "JSA Project",
+        "type": "myProjects",
+        "titleType": "Meus projetos",
+        "sourceCodeLink": "https://github.com/satuctkode/ProjectJSA_PHP_MySQL",
+        "websiteLink": "http://jsaproject.epizy.com",
+        "imgSrc": "./images/my-projects/jsaproject/image-1.png",
+        "imgAlt": "JSA Project",
+        "description": "Este projeto já teve várias versões, ele é sobre serviços em ar condicionado e o foco dele atualmente é em apenas uma única página(chamado de OnePage), apesar de que todas suas versões anteriores eram em várias páginas.",
+        "imagesSlider": [
+          {
+            "id": 0,
+            "imgSrc": "./images/my-projects/jsaproject/image-1.png",
+            "imgAlt": "JSA Project imagem 1"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/my-projects/jsaproject/image-2.png",
+            "imgAlt": "JSA Project imagem 2"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/my-projects/jsaproject/image-3.png",
+            "imgAlt": "JSA Project imagem 3"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/my-projects/jsaproject/image-4.png",
+            "imgAlt": "JSA Project imagem 4"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "OW Info Project",
+        "type": "myProjects",
+        "titleType": "Meus projetos",
+        "sourceCodeLink": "https://github.com/satuctkode/OWInfo-Project",
+        "websiteLink": "http://owinfo-project.epizy.com",
+        "imgSrc": "./images/my-projects/owinfo-project/image-1.png",
+        "imgAlt": "OW Info Project",
+        "description": "Uma das coisas que mais gosto além de programação, são os games, e o meu primeiro projeto web de um game que gosto muito(Overwatch) foi este, esse site é para o usuário encontrar informações sobre personagens e mapas deste jogo.",
+        "imagesSlider": [
+          {
+            "id": 0,
+            "imgSrc": "./images/my-projects/owinfo-project/image-1.png",
+            "imgAlt": "OW Info Project imagem 1"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/my-projects/owinfo-project/image-2.png",
+            "imgAlt": "OW Info Project imagem 2"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/my-projects/owinfo-project/image-3.png",
+            "imgAlt": "OW Info Project imagem 3"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/my-projects/owinfo-project/image-4.png",
+            "imgAlt": "OW Info Project imagem 4"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "eAgro test",
+        "type": "myProjects",
+        "titleType": "Meus projetos",
+        "sourceCodeLink": "https://github.com/satuctkode/eagroteste",
+        "websiteLink": "https://satuctkode.github.io/eagroteste",
+        "imgSrc": "./images/my-projects/eagro-test/image-1.png",
+        "imgAlt": "eAgro test",
+        "description": "Este projeto foi um teste que a eAgro me enviou.",
+        "imagesSlider": [
+          {
+            "id": 0,
+            "imgSrc": "./images/my-projects/eagro-test/image-1.png",
+            "imgAlt": "eAgro test imagem 1"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/my-projects/eagro-test/image-2.png",
+            "imgAlt": "eAgro test imagem 2"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/my-projects/eagro-test/image-3.png",
+            "imgAlt": "eAgro test imagem 3"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/my-projects/eagro-test/image-4.png",
+            "imgAlt": "eAgro test imagem 4"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "TSA test",
+        "type": "myProjects",
+        "titleType": "Meus projetos",
+        "sourceCodeLink": "https://github.com/satuctkode/teste-frontend-tsa",
+        "websiteLink": "https://satuctkode.github.io/teste-frontend-tsa",
+        "imgSrc": "./images/my-projects/tsa-test/image-1.png",
+        "imgAlt": "TSA test",
+        "description": "Este projeto foi um teste que a TSA me enviou.",
+        "imagesSlider": [
+          {
+            "id": 0,
+            "imgSrc": "./images/my-projects/tsa-test/image-1.png",
+            "imgAlt": "TSA test imagem 1"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/my-projects/tsa-test/image-2.png",
+            "imgAlt": "TSA test imagem 2"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/my-projects/tsa-test/image-3.png",
+            "imgAlt": "TSA test imagem 3"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/my-projects/tsa-test/image-4.png",
+            "imgAlt": "TSA test imagem 4"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "title": "Contate me nas redes sociais"
+    }
+  },
+  "en": {
+    "navbarTop": {
+      "mainLogo": {
+        "imgSrc": "./images/logo.png",
+        "imgAlt": "Main logo"
+      },
+      "menu": {
+        "homeText": "Home",
+        "projectsText": "Projects"
+      },
+      "nightMode": {
+        "lightText": "Light mode",
+        "nightText": "Night mode"
+      },
+      "searchBarButton": {
+        "text": "Search"
+      },
+      "languageSelect": {
+        "defaultText": "Choose a language",
+        "languages": [
+          {
+            "id": 0,
+            "imgSrc": "./images/languages/br-flag.png",
+            "imgAlt": "Brazil icon",
+            "text": "Portuguese",
+            "languageTag": "ptbr",
+            "status": false
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/languages/us-flag.png",
+            "imgAlt": "USA icon",
+            "text": "English",
+            "languageTag": "en",
+            "status": false
+          }
+        ]
+      }
+    },
+    "home": {
+      "myFavoriteProjects": {
+        "title": "My favorite projects",
+        "projects": [
+          {
+            "id": 0,
+            "imgSrc": "./images/my-favorite-projects/image-1.png",
+            "imgAlt": "BSConsult test",
+            "description": "This project was a test sent to me by BSConsult."
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/my-favorite-projects/image-2.png",
+            "imgAlt": "SatuctGames Shop",
+            "description": "This project was a of the ones I liked most to create, it is simply a game store with a cart, login and register area, and a control panel for users, products and discount coupons."
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/my-favorite-projects/image-3.png",
+            "imgAlt": "JSA Project",
+            "description": "This project has had several versions, it is about  air conditioner services and the focus of it is currently only on a single page(called OnePage), although all of its previous versions were previously on multiple pages."
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/my-favorite-projects/image-4.png",
+            "imgAlt": "Metrix One",
+            "description": "My first job as a freelancer was to create this Landing Page for the Metrix One."
+          }
+        ]
+      },
+      "aboutMe": {
+        "title": "About me",
+        "text": "Since I was a kid I had contact with computers, but the funniest thing is that I just liked the hardware. That's right, since early I had contact with motherboard, processor and things like that, and of course it may not be cool for some, but I really liked it. However, I was not, nor am I, any hardware expert, I just know the basics so I don't get sick when there is a problem. But as time went by I liked software too, and so, at the end of 2017 I started to have contact with programming, but like any beginner I went through several programming languages ​​without knowing which to choose, but then I chose to be a web developer and I continue to study a lot until now. One of my passions is technology, so everything that involves this area I'm interested, I think it's amazing how this area has been evolving and changing the world."
+      },
+      "toolsICurrentlyUse": {
+        "title": "Tools I currently use",
+        "tools": [
+          {
+            "id": 0,
+            "imgSrc": "./images/tools/html5.png",
+            "imgAlt": "HTML5",
+            "title": "HTML5"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/tools/css3.png",
+            "imgAlt": "CSS3",
+            "title": "CSS3"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/tools/js.png",
+            "imgAlt": "JavaScript",
+            "title": "JavaScript"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/tools/ts.png",
+            "imgAlt": "TypeScript",
+            "title": "TypeScript"
+          },
+          {
+            "id": 4,
+            "imgSrc": "./images/tools/gulp.png",
+            "imgAlt": "GulpJS",
+            "title": "GulpJS"
+          },
+          {
+            "id": 5,
+            "imgSrc": "./images/tools/react.png",
+            "imgAlt": "ReactJS",
+            "title": "ReactJS"
+          },
+          {
+            "id": 6,
+            "imgSrc": "./images/tools/php.png",
+            "imgAlt": "PHP",
+            "title": "PHP"
+          },
+          {
+            "id": 7,
+            "imgSrc": "./images/tools/mysql.png",
+            "imgAlt": "MySQL",
+            "title": "MySQL"
+          }
+        ]
+      },
+      "toolsIHaveUsed": {
+        "title": "Tools I have used",
+        "tools": [
+          {
+            "id": 0,
+            "imgSrc": "./images/tools/sass.png",
+            "imgAlt": "Sass",
+            "title": "Sass"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/tools/bootstrap.png",
+            "imgAlt": "Bootstrap 4",
+            "title": "Bootstrap 4"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/tools/vuejs.png",
+            "imgAlt": "VueJS",
+            "title": "VueJS"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/tools/java.png",
+            "imgAlt": "Java",
+            "title": "Java"
+          },
+          {
+            "id": 4,
+            "imgSrc": "./images/tools/python.png",
+            "imgAlt": "Python",
+            "title": "Python"
+          },
+          {
+            "id": 5,
+            "imgSrc": "./images/tools/docker.png",
+            "imgAlt": "Docker",
+            "title": "Docker"
+          }
+        ]
+      },
+      "myGitHub": {
+        "title": "My GitHub",
+        "imgAlt": "GitHub profile image",
+        "repositoriesTitle": "Repositories"
+      }
+    },
+    "projects": {
+      "alert": {
+        "text": "On this page there are some projects that I liked the most, if you want to see more projects go to my GitHub repository and take a look.",
+        "linkText": "Click here to go to my GitHub repository."
+      },
+      "customerProjects": {
+        "title": "Customer projects",
+        "buttonText": "Show details"
+      },
+      "myProjects": {
+        "title": "My projects",
+        "buttonText": "Show details"
+      }
+    },
+    "modal": {
+      "searchBarModal": {
+        "inputPlaceholder": "Search for a project"
+      },
+      "projectDetailsModal": {
+        "buttonSourceCodeText": "Source code",
+        "buttonWebsiteText": "Website",
+        "descriptionTitle": "Description"
+      }
+    },
+    "projectsData": [
+      {
+        "id": 0,
+        "name": "Metrix One",
+        "type": "customerProjects",
+        "titleType": "Customer projects",
+        "sourceCodeLink": "",
+        "websiteLink": "https://metrix.one",
+        "imgSrc": "./images/customer-projects/metrixOne/image-1.png",
+        "imgAlt": "Metrix One",
+        "description": "My first job as a freelancer was to create this Landing Page for the Metrix One.",
+        "imagesSlider": [
+          {
+            "id": 0,
+            "imgSrc": "./images/customer-projects/metrixOne/image-1.png",
+            "imgAlt": "Metrix One image 1"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/customer-projects/metrixOne/image-2.png",
+            "imgAlt": "Metrix One image 2"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/customer-projects/metrixOne/image-3.png",
+            "imgAlt": "Metrix One image 3"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/customer-projects/metrixOne/image-4.png",
+            "imgAlt": "Metrix One image 4"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "BSConsult test",
+        "type": "myProjects",
+        "titleType": "My projects",
+        "sourceCodeLink": "https://github.com/satuctkode/BSConsult-test",
+        "websiteLink": "https://satuctkode.github.io/BSConsult-test",
+        "imgSrc": "./images/my-projects/bsconsult-test/image-1.png",
+        "imgAlt": "BSConsult test",
+        "description": "This project was a test sent to me by BSConsult.",
+        "imagesSlider": [
+          {
+            "id": 0,
+            "imgSrc": "./images/my-projects/bsconsult-test/image-1.png",
+            "imgAlt": "BSConsult test image 1"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/my-projects/bsconsult-test/image-2.png",
+            "imgAlt": "BSConsult test image 2"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/my-projects/bsconsult-test/image-3.png",
+            "imgAlt": "BSConsult test image 3"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/my-projects/bsconsult-test/image-4.png",
+            "imgAlt": "BSConsult test image 4"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "SatuctGames Shop",
+        "type": "myProjects",
+        "titleType": "My projects",
+        "sourceCodeLink": "https://github.com/satuctkode/SatuctGames_Project_PHP_MySQL",
+        "websiteLink": "http://satuctgames-shop.epizy.com",
+        "imgSrc": "./images/my-projects/satuctgames-shop/image-1.png",
+        "imgAlt": "SatuctGames Shop",
+        "description": "This project was a of the ones I liked most to create, it is simply a game store with a cart, login and register area, and a control panel for users, products and discount coupons.",
+        "imagesSlider": [
+          {
+            "id": 0,
+            "imgSrc": "./images/my-projects/satuctgames-shop/image-1.png",
+            "imgAlt": "SatuctGames Shop image 1"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/my-projects/satuctgames-shop/image-2.png",
+            "imgAlt": "SatuctGames Shop image 2"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/my-projects/satuctgames-shop/image-3.png",
+            "imgAlt": "SatuctGames Shop image 3"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/my-projects/satuctgames-shop/image-4.png",
+            "imgAlt": "SatuctGames Shop image 4"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "JSA Project",
+        "type": "myProjects",
+        "titleType": "My projects",
+        "sourceCodeLink": "https://github.com/satuctkode/ProjectJSA_PHP_MySQL",
+        "websiteLink": "http://jsaproject.epizy.com",
+        "imgSrc": "./images/my-projects/jsaproject/image-1.png",
+        "imgAlt": "JSA Project",
+        "description": "This project has had several versions, it is about  air conditioner services and the focus of it is currently only on a single page(called OnePage), although all of its previous versions were previously on multiple pages.",
+        "imagesSlider": [
+          {
+            "id": 0,
+            "imgSrc": "./images/my-projects/jsaproject/image-1.png",
+            "imgAlt": "JSA Project image 1"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/my-projects/jsaproject/image-2.png",
+            "imgAlt": "JSA Project image 2"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/my-projects/jsaproject/image-3.png",
+            "imgAlt": "JSA Project image 3"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/my-projects/jsaproject/image-4.png",
+            "imgAlt": "JSA Project image 4"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "OW Info Project",
+        "type": "myProjects",
+        "titleType": "My projects",
+        "sourceCodeLink": "https://github.com/satuctkode/OWInfo-Project",
+        "websiteLink": "http://owinfo-project.epizy.com",
+        "imgSrc": "./images/my-projects/owinfo-project/image-1.png",
+        "imgAlt": "OW Info Project",
+        "description": "One of the things I like most besides programming, are the games, and my first web project of a game I like a lot (Overwatch) was this, this site is for the user to find information about characters and maps of this game.",
+        "imagesSlider": [
+          {
+            "id": 0,
+            "imgSrc": "./images/my-projects/owinfo-project/image-1.png",
+            "imgAlt": "OW Info Project image 1"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/my-projects/owinfo-project/image-2.png",
+            "imgAlt": "OW Info Project image 2"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/my-projects/owinfo-project/image-3.png",
+            "imgAlt": "OW Info Project image 3"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/my-projects/owinfo-project/image-4.png",
+            "imgAlt": "OW Info Project image 4"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "eAgro test",
+        "type": "myProjects",
+        "titleType": "My projects",
+        "sourceCodeLink": "https://github.com/satuctkode/eagroteste",
+        "websiteLink": "https://satuctkode.github.io/eagroteste",
+        "imgSrc": "./images/my-projects/eagro-test/image-1.png",
+        "imgAlt": "eAgro test",
+        "description": "This project was a test sent to me by eAgro.",
+        "imagesSlider": [
+          {
+            "id": 0,
+            "imgSrc": "./images/my-projects/eagro-test/image-1.png",
+            "imgAlt": "eAgro test image 1"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/my-projects/eagro-test/image-2.png",
+            "imgAlt": "eAgro test image 2"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/my-projects/eagro-test/image-3.png",
+            "imgAlt": "eAgro test image 3"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/my-projects/eagro-test/image-4.png",
+            "imgAlt": "eAgro test image 4"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "TSA test",
+        "type": "myProjects",
+        "titleType": "My projects",
+        "sourceCodeLink": "https://github.com/satuctkode/teste-frontend-tsa",
+        "websiteLink": "https://satuctkode.github.io/teste-frontend-tsa",
+        "imgSrc": "./images/my-projects/tsa-test/image-1.png",
+        "imgAlt": "TSA test",
+        "description": "This project was a test sent to me by TSA.",
+        "imagesSlider": [
+          {
+            "id": 0,
+            "imgSrc": "./images/my-projects/tsa-test/image-1.png",
+            "imgAlt": "TSA test image 1"
+          },
+          {
+            "id": 1,
+            "imgSrc": "./images/my-projects/tsa-test/image-2.png",
+            "imgAlt": "TSA test image 2"
+          },
+          {
+            "id": 2,
+            "imgSrc": "./images/my-projects/tsa-test/image-3.png",
+            "imgAlt": "TSA test image 3"
+          },
+          {
+            "id": 3,
+            "imgSrc": "./images/my-projects/tsa-test/image-4.png",
+            "imgAlt": "TSA test image 4"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "title": "Contact me on social media"
+    }
+  }
+}

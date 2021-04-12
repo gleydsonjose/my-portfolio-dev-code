@@ -1,0 +1,6 @@
+Logo in NavBar was removed
+Logo in favicon was changed
+Website title was changed
+Tools I currently use was updated
+Tools I have used was updated
+My GitHub was fixed and had a link to repositories added

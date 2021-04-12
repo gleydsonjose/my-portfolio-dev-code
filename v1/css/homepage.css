@@ -1,0 +1,354 @@
+/* Default */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #5eb67d;
+}
+
+/* Homepage */
+header {
+  width: 800px;
+  padding: 10px 0;
+}
+header img {
+  max-width: 300px;
+}
+
+section {
+  background-color: #ebebeb;
+  width: 800px;
+  padding: 20px 25px;
+  /* Project-Modal */
+}
+section #name-portfolio, section #profession-portfolio, section #about-me-portfolio {
+  padding-bottom: 20px;
+}
+section #name-portfolio h3, section #profession-portfolio h3, section #about-me-portfolio h3 {
+  color: #272727;
+  font-weight: 100;
+  padding-bottom: 5px;
+}
+section #name-portfolio p, section #profession-portfolio p, section #about-me-portfolio p {
+  font-size: 11pt;
+  text-align: justify;
+  word-wrap: break-word;
+  color: #565656;
+}
+section #currently-using {
+  padding-bottom: 20px;
+}
+section #currently-using h3 {
+  color: #272727;
+  font-weight: 100;
+}
+section #currently-using div {
+  padding-top: 18px;
+}
+section #currently-using div img {
+  width: 35px;
+  height: 35px;
+  margin-right: 25px;
+}
+section #currently-using div img:last-child {
+  margin-right: 0;
+}
+section #contact-me-portfolio {
+  padding-bottom: 20px;
+}
+section #contact-me-portfolio h3 {
+  color: #272727;
+  font-weight: 100;
+}
+section #contact-me-portfolio div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 18px;
+}
+section #contact-me-portfolio div a {
+  margin-right: 25px;
+  text-decoration: none;
+}
+section #contact-me-portfolio div a:last-child {
+  margin-right: 0;
+}
+section #contact-me-portfolio div a i {
+  font-size: 25pt;
+  filter: grayscale(0.3);
+}
+section #contact-me-portfolio div a i:hover {
+  filteR: grayscale(1);
+  transition: 0.5s ease-in-out;
+}
+section #contact-me-portfolio div a .fa-facebook-square {
+  color: #3f5c9a;
+}
+section #contact-me-portfolio div a .fa-linkedin {
+  color: #0073b0;
+}
+section #contact-me-portfolio div a .fa-twitter-square {
+  color: #1da1f2;
+}
+section #contact-me-portfolio div a .fa-whatsapp-square {
+  color: #00e676;
+}
+section #contact-me-portfolio div a .fa-telegram {
+  color: #35ace1;
+}
+section #github-repository {
+  padding-bottom: 50px;
+}
+section #github-repository h3 {
+  color: #272727;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+section #github-repository a {
+  text-decoration: none;
+}
+section #github-repository a:hover {
+  opacity: 0.8;
+  transition: 0.5s ease-in-out;
+}
+section #github-repository a i {
+  color: #272727;
+  font-size: 25pt;
+}
+section #my-web-projects #title {
+  color: #272727;
+  font-weight: 100;
+  padding-bottom: 20px;
+}
+section #my-web-projects #title i {
+  color: #272727;
+  padding-right: 8px;
+}
+section #my-web-projects #project-inner-div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #c3c3c3;
+  margin-bottom: 30px;
+}
+section #my-web-projects #project-inner-div #info-project {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  padding: 10px;
+}
+section #my-web-projects #project-inner-div #info-project img {
+  grid-column: 1;
+  width: 220px;
+  height: 161px;
+  box-shadow: 0 0 2px 0 #272727;
+}
+section #my-web-projects #project-inner-div #info-project div {
+  grid-column: 2;
+}
+section #my-web-projects #project-inner-div #info-project div h3 {
+  color: #272727;
+  font-weight: 100;
+  padding-bottom: 7px;
+}
+section #my-web-projects #project-inner-div #info-project div p {
+  font-size: 11pt;
+  text-align: justify;
+  word-wrap: break-word;
+  color: #333333;
+}
+section #my-web-projects #project-inner-div #btn-group-project {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+section #my-web-projects #project-inner-div #btn-group-project a {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #aaa9a9b9;
+  padding: 7px 0;
+  margin-top: 2px;
+  text-decoration: none;
+}
+section #my-web-projects #project-inner-div #btn-group-project a:hover {
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+}
+section #my-web-projects #project-inner-div #btn-group-project a i {
+  padding-left: 15px;
+  font-size: 12pt;
+  color: #333333;
+}
+section #my-web-projects #project-inner-div #btn-group-project a p {
+  color: #333333;
+}
+section #my-web-projects #project-inner-div #btn-group-project #project-images-title {
+  padding-left: 10px;
+}
+section #my-web-projects #project-inner-div #btn-group-project #project-website-title {
+  padding-left: 12px;
+}
+section #my-web-projects #project-inner-div #btn-group-project #project-source-code-title {
+  padding-left: 8px;
+}
+section #project-inner-div:last-child {
+  margin-bottom: 0 !important;
+}
+section #bg-main-project-images-modal {
+  display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: #272727af;
+}
+section #bg-main-project-images-modal #bg-inner-project-images-modal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #ebebeb;
+  width: 630px;
+  padding: 12px;
+}
+section #bg-main-project-images-modal #bg-inner-project-images-modal #close-modal {
+  align-self: flex-end;
+  color: #272727;
+  margin-bottom: 20px;
+  font-size: 11pt;
+}
+section #bg-main-project-images-modal #bg-inner-project-images-modal #close-modal:hover {
+  color: #5eb67d;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+section #bg-main-project-images-modal #bg-inner-project-images-modal #main-image-div {
+  display: grid;
+  grid-template-rows: 200px 50px 200px;
+  margin-bottom: 18px;
+}
+section #bg-main-project-images-modal #bg-inner-project-images-modal #main-image-div #main-image {
+  grid-column: 1;
+  grid-row: 1/3;
+  width: 100%;
+  height: 450px;
+  background-color: #272727;
+  box-shadow: 0 0 2px 0 #272727;
+}
+section #bg-main-project-images-modal #bg-inner-project-images-modal #main-image-div #arrows {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  grid-column: 1;
+  grid-row: 2;
+  align-self: center;
+  width: 100%;
+}
+section #bg-main-project-images-modal #bg-inner-project-images-modal #main-image-div #arrows i {
+  color: #5eb67d;
+  font-size: 18pt;
+  padding: 15px;
+}
+section #bg-main-project-images-modal #bg-inner-project-images-modal #main-image-div #arrows button {
+  background-color: transparent;
+}
+section #bg-main-project-images-modal #bg-inner-project-images-modal #main-image-div #arrows button:hover {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  background-color: #79797924;
+}
+section #bg-main-project-images-modal #bg-inner-project-images-modal #main-image-div #arrows #arrow-left {
+  margin-left: 10px;
+  margin-right: auto;
+}
+section #bg-main-project-images-modal #bg-inner-project-images-modal #main-image-div #arrows #arrow-right {
+  margin-right: 10px;
+  margin-left: auto;
+}
+section #bg-main-project-images-modal #bg-inner-project-images-modal #btn-group-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+section #bg-main-project-images-modal #bg-inner-project-images-modal #btn-group-images img {
+  width: 18.8%;
+  height: 80px;
+  background-color: #272727;
+  box-shadow: 0 0 2px 0 #272727;
+}
+section #bg-main-project-images-modal #bg-inner-project-images-modal #btn-group-images img:hover {
+  box-shadow: 0 0 1px 2px #5eb67d;
+  cursor: pointer;
+}
+
+/* Breakpoint - Mobile - Width: 900px*/
+@media screen and (max-width: 900px) {
+  /* Homepage */
+  header {
+    width: 90%;
+    padding: 10px 0;
+  }
+  header img {
+    max-width: 300px;
+  }
+
+  section {
+    width: 90%;
+  }
+  section #currently-using div {
+    padding-top: 3px;
+  }
+  section #currently-using div img {
+    margin-top: 15px;
+  }
+}
+/* Breakpoint - Mobile - Width: 600px */
+@media screen and (max-width: 600px) {
+  section {
+    /* Project-Modal */
+  }
+  section #my-web-projects #project-inner-div #info-project {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  section #my-web-projects #project-inner-div #info-project img {
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+  }
+  section #my-web-projects #project-inner-div #info-project div {
+    grid-column: 1;
+  }
+  section #my-web-projects #project-inner-div #info-project div h3 {
+    padding-top: 12px;
+  }
+  section #bg-main-project-images-modal #bg-inner-project-images-modal {
+    width: 100%;
+  }
+  section #bg-main-project-images-modal #bg-inner-project-images-modal #main-image-div {
+    display: grid;
+    grid-template-rows: 140px 20px 140px;
+  }
+  section #bg-main-project-images-modal #bg-inner-project-images-modal #main-image-div #main-image {
+    height: 300px;
+  }
+}
+
+/*# sourceMappingURL=homepage.css.map */

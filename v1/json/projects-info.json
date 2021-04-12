@@ -1,0 +1,44 @@
+[
+    {
+        "projectName": "SatuctGames Shop",
+        "projectImage": {"img": "imagens/projects/satuctgames-shop/main-sgs.png", "alt": "Imagem principal do projeto SatuctGames Shop"},
+        "projectDescription": "Esse projeto é o que eu mais gostei de ter criado, é uma loja de games que tem carrinho, área de login e cadastro, e um painel de controle para gerenciar usuários, produtos e cupons de desconto.",
+        "projectAllImages": [
+            {"img": "imagens/projects/satuctgames-shop/image1-sgs.png", "alt": "Imagem 1 do projeto SatuctGames Shop"},
+            {"img": "imagens/projects/satuctgames-shop/image2-sgs.png", "alt": "Imagem 2 do projeto SatuctGames Shop"},
+            {"img": "imagens/projects/satuctgames-shop/image3-sgs.png", "alt": "Imagem 3 do projeto SatuctGames Shop"},
+            {"img": "imagens/projects/satuctgames-shop/image4-sgs.png", "alt": "Imagem 4 do projeto SatuctGames Shop"},
+            {"img": "imagens/projects/satuctgames-shop/image5-sgs.png", "alt": "Imagem 5 do projeto SatuctGames Shop"}
+        ],
+        "projectWebsite": "http://satuctgames-shop.epizy.com",
+        "projectSourceCode": "https://github.com/satuctkode/SatuctGames_Project_PHP_MySQL"
+    },
+    {
+        "projectName": "JSA Project",
+        "projectImage": {"img": "imagens/projects/jsaproject/main-jp.png", "alt": "Imagem principal do projeto JSA Project"},
+        "projectDescription": "Um projeto que fiz apenas focado em uma única página(OnePage), este site é sobre serviços em ar condicionado.",
+        "projectAllImages": [
+            {"img": "imagens/projects/jsaproject/image1-jp.png", "alt": "Imagem 1 do projeto JSA Project"},
+            {"img": "imagens/projects/jsaproject/image2-jp.png", "alt": "Imagem 2 do projeto JSA Project"},
+            {"img": "imagens/projects/jsaproject/image3-jp.png", "alt": "Imagem 3 do projeto JSA Project"},
+            {"img": "imagens/projects/jsaproject/image4-jp.png", "alt": "Imagem 4 do projeto JSA Project"},
+            {"img": "imagens/projects/jsaproject/image5-jp.png", "alt": "Imagem 5 do projeto JSA Project"}
+        ],
+        "projectWebsite": "http://jsaproject.epizy.com",
+        "projectSourceCode": "https://github.com/satuctkode/ProjectJSA_PHP_MySQL"
+    },
+    {
+        "projectName": "OW Info Project",
+        "projectImage": {"img": "imagens/projects/owinfo-project/main-oip.png", "alt": "Imagem principal do projeto OW Info Project"},
+        "projectDescription": "Este site é para usuários que jogam overwatch encontrarem informações de personagens e mapas deste game, este site é bem simples de entender e encontrar a informação que o usuário procura.",
+        "projectAllImages": [
+            {"img": "imagens/projects/owinfo-project/image1-oip.png", "alt": "Imagem 1 do projeto OW Info Project"},
+            {"img": "imagens/projects/owinfo-project/image2-oip.png", "alt": "Imagem 2 do projeto OW Info Project"},
+            {"img": "imagens/projects/owinfo-project/image3-oip.png", "alt": "Imagem 3 do projeto OW Info Project"},
+            {"img": "imagens/projects/owinfo-project/image4-oip.png", "alt": "Imagem 4 do projeto OW Info Project"},
+            {"img": "imagens/projects/owinfo-project/image5-oip.png", "alt": "Imagem 5 do projeto OW Info Project"}
+        ],
+        "projectWebsite": "http://owinfo-project.epizy.com",
+        "projectSourceCode": "https://github.com/satuctkode/OWInfo-Project"
+    }
+]
